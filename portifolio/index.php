@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<?php require_once('../rdd/head.html'); ?>
+	<?php require_once('../rdd/head-upTree.html'); ?>
 	</head>
 	<body>
 		<?php require_once('../rdd/nav-upTree.html'); ?>
