@@ -16,7 +16,9 @@ nav{
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
-    justify-content:start;
+    @media only screen and (min-width: 720px){
+        justify-content:center;
+    }
     overflow-x:auto;
     overflow-y:hidden;
     > a{
@@ -79,7 +81,7 @@ main{
     padding:50px;
     @media only screen and (min-width: 768px){margin:0 10%;}
     min-height:600px;
-    font-family:king;
+    font-family:"king";
     font-weight:900;
 }
 
