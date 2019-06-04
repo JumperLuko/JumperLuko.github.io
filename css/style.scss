@@ -6,6 +6,8 @@
 body{
     margin:0;padding:0;
     min-height:100vh;
+    background:#c1bdbe;
+    background-image:url(../img/background.png);
 }
 
 nav{
@@ -77,12 +79,14 @@ nav{
 }
 
 main{
-    background-color:#a4c06a;
+    background-color:#f0ebee;
+    background-image:url(../img/background-text.png);
     padding:50px;
     @media only screen and (min-width: 768px){margin:0 10%;}
     min-height:600px;
     font-family:"king";
     font-weight:900;
+    box-shadow: #a4c06a 0 0 10px;
 }
 
 footer{
