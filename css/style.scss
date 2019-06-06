@@ -14,11 +14,12 @@ nav{
     background-color:#607d23;
     height:120px;
     width:100%;
-    padding:0 0 0 10px;
+    padding:0 10px 0 10px;
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
-    @media only screen and (min-width: 720px){
+    justify-content: flex-start;
+    @media only screen and (min-width: 680px){
         justify-content:center;
     }
     overflow-x:auto;
@@ -38,17 +39,27 @@ nav{
         color:#fff;
         word-break: break-word;
         font-size:15px;
+        > span{
+            display:none;
+        }
     }
-    a:hover{
+    > a:hover{
         animation-name:hoverCube;
         animation-duration:0.5s;
         animation-fill-mode:both;
     }
-    a:active{
+    > a:active{
         animation-name:activeCube;
         animation-duration:0.5s;
         animation-fill-mode:both;
     }
+    > a:hover,a:target{
+        background-image: none !important;
+        > span{
+            display:initial;
+        }
+    }
+
 }
 
 @keyframes hoverCube {

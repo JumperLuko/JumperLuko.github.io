@@ -15,7 +15,7 @@ nav {
   background-color: #607d23;
   height: 120px;
   width: 100%;
-  padding: 0 0 0 10px;
+  padding: 0 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,11 +24,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 680px) {
   nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -60,7 +63,11 @@ nav > a {
   font-size: 15px;
 }
 
-nav a:hover {
+nav > a > span {
+  display: none;
+}
+
+nav > a:hover {
   -webkit-animation-name: hoverCube;
           animation-name: hoverCube;
   -webkit-animation-duration: 0.5s;
@@ -69,13 +76,21 @@ nav a:hover {
           animation-fill-mode: both;
 }
 
-nav a:active {
+nav > a:active {
   -webkit-animation-name: activeCube;
           animation-name: activeCube;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+nav > a:hover, nav a:target {
+  background-image: none !important;
+}
+
+nav > a:hover > span, nav a:target > span {
+  display: initial;
 }
 
 @-webkit-keyframes hoverCube {
