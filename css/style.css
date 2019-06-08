@@ -85,11 +85,11 @@ nav > a:active {
           animation-fill-mode: both;
 }
 
-nav > a:hover, nav a:target {
+nav > a:hover, nav a.activeMenu {
   background-image: none !important;
 }
 
-nav > a:hover > span, nav a:target > span {
+nav > a:hover > span, nav a.activeMenu > span {
   display: initial;
 }
 

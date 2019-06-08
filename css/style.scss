@@ -53,7 +53,7 @@ nav{
         animation-duration:0.5s;
         animation-fill-mode:both;
     }
-    > a:hover,a:target{
+    > a:hover,a.activeMenu{
         background-image: none !important;
         > span{
             display:initial;
