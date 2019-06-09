@@ -8,8 +8,11 @@
         <a href="../sobre/#about" style="background-image:url('../img/menu/about.svg');" title="Sobre" class="about"><span>Sobre</span></a>
     </nav>
     <script>
-        var hash = window.location.hash.substr(1);
-        if(hash !== ""){
-            document.getElementsByClassName(hash)[0].className = "activeMenu";
-        }
+        function activeMenu(){
+            var hash = window.location.hash.substr(1);
+            if(hash !== "" && document.getElementsByClassName(hash)[0] != null){
+                document.getElementsByClassName(hash)[0].className = "activeMenu";
+            }
+        };
+        activeMenu();
     </script>

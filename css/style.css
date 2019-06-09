@@ -1,6 +1,6 @@
 @font-face {
   font-family: "KING";
-  src: url("../font/KING.TTF") format("truetype");
+  src: url("../font/King.ttf") format("truetype");
 }
 
 body {
@@ -192,8 +192,13 @@ footer > div {
   padding: 20px 0;
 }
 
-footer > div > a {
+footer > div > a:link {
   width: 100%;
   text-align: center;
   text-decoration: none;
+  color: #1d153a;
+}
+
+footer > div > a:visited {
+  color: #4b1535;
 }
