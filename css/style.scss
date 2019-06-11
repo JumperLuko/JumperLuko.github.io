@@ -25,10 +25,13 @@ nav{
     overflow-x:auto;
     overflow-y:hidden;
     > a{
-        width:80px;
+        min-width:80px;
+        width:10%;
         height:80px;
         padding:5px;
         background-color:#445819;
+        background-repeat: no-repeat;
+        background-position: center;
         margin:10px;
         flex-shrink:0;
         display:flex;
