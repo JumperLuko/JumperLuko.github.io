@@ -1,0 +1,14 @@
+{
+    "short_name": "Jumper",
+    "name": "Jumper Luko",
+    "icons": [
+      {
+        "src": "./img/favicon-x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#607d23"
+  }
