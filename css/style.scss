@@ -12,7 +12,7 @@ body{
 
 nav{
     background-color:#607d23;
-    height:120px;
+    height:100px;
     width:100%;
     padding:0 10px 0 10px;
     display:flex;
@@ -27,11 +27,12 @@ nav{
     > a{
         min-width:80px;
         width:10%;
-        height:80px;
+        height:60px;
         padding:5px;
         background-color:#445819;
         background-repeat: no-repeat;
         background-position: center;
+        background-size:60px;
         margin:10px;
         flex-shrink:0;
         display:flex;
