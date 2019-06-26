@@ -8,11 +8,11 @@ body {
   padding: 0;
   min-height: 100vh;
   background: #c1bdbe;
-  background-image: url(../img/background.png);
+  background-image: linear-gradient(150deg, #c1bdbe, #f8f7f7);
 }
 
 nav {
-  background-color: #607d23;
+  background-color: #344413;
   height: 100px;
   width: 100%;
   padding: 0 10px 0 10px;
@@ -29,6 +29,7 @@ nav {
           justify-content: flex-start;
   overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
 }
 
 @media only screen and (min-width: 680px) {
@@ -161,21 +162,23 @@ main {
   background-color: #f0ebee;
   background-image: url(../img/background-text.png);
   padding: 50px;
-  min-height: 600px;
+  min-height: calc(100vh - 470px);
   font-family: "king";
   font-weight: 900;
-  -webkit-box-shadow: #a4c06a 0 0 10px;
-          box-shadow: #a4c06a 0 0 10px;
+  -webkit-box-shadow: #f0ebee 0 0 5px 5px;
+          box-shadow: #f0ebee 0 0 5px 5px;
 }
 
 @media only screen and (min-width: 768px) {
   main {
     margin: 0 10%;
+    min-height: calc(100vh - 338px);
   }
 }
 
 footer {
-  background-color: #60a65c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4db347), to(#48a843));
+  background-image: linear-gradient(#4db347, #48a843);
   color: #000;
   font-size: 20px;
   display: -webkit-box;
@@ -204,5 +207,5 @@ footer > div > a:link {
 }
 
 footer > div > a:visited {
-  color: #4b1535;
+  color: #29051b;
 }
