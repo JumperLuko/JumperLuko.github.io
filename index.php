@@ -5,8 +5,10 @@
 	<body>
 		<?php require_once('rdd/nav.html'); ?>
 		<main class="centerText h3">
-			<p>Um site de Jumper Luko</p>
-			<p>O Site será construido em partes</p>
+			<p>Belíssimo dia para meu glorioso visitante!</p>
+			<p>Um site de Thiago Augusto</p><br/>
+			<p>Você já pode visitar as seguintes guias:</p>
+			<p><a href="./portfolio/#portfolio">Portifólio</a></p>
 		</main>
 		<?php require_once('rdd/footer.html'); ?>
 	</body>
