@@ -10,7 +10,7 @@ body{
     background-image: linear-gradient(150deg, #f3ece6, #fffbf8);
 }
 
-img{max-width: 100%;}
+img,object{max-width: 100%;object-fit: contain;}
 
 nav{
     background-color:#344413;
