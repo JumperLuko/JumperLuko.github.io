@@ -4,11 +4,9 @@
 	</head>
 	<body>
 		<?php require_once('../rdd/nav-upTree.html'); ?>
-		<main class="centerText h3">
-			<p><a href="http://snaketag.com.br/" target="_BLANK">Snaketag</a></p>
-			<p class="h4">Desenvolvimento de sites</p><br/>
-			<p>Nexware</p>
-			<p class="h4">Grupo de desenvolvimento</p>
+		<main class="centerText h5">
+			<p>Para o que virá a público, irei exibir abaixo!</p><br/>
+			<p>- Este site.</p>
 		</main>
 		<?php require_once('../rdd/footer-upTree.html'); ?>
 	</body>

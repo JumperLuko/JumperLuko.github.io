@@ -18,7 +18,7 @@ body {margin: 0;padding: 0;}
 /*---- ---- Responsive Columns Vanilla (col-) & Grid (gcol-) ---- ----*/
 /* Flex & Vanilla: Adjust size on child elements, only column */
 /* Grid: Adjust size on father elements, column  */
-[class*="gcol-"] {
+[class*="gcol-"],[class*="gacol-"]{
     display: grid;
     grid-template-columns: 100%;
 }
@@ -74,6 +74,19 @@ body {margin: 0;padding: 0;}
     .gcol--10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol--11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol--12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol--1 {grid-template-columns: auto;}
+    .gacol--2 {grid-template-columns: auto auto;}
+    .gacol--3 {grid-template-columns: auto auto auto;}
+    .gacol--4 {grid-template-columns: auto auto auto auto;}
+    .gacol--5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol--6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol--7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol--8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol--9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol--10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol--11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol--12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 350px) {
     .col-ss-1 {width: 8.33%;}
@@ -122,6 +135,19 @@ body {margin: 0;padding: 0;}
     .gcol-ss-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-ss-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-ss-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-ss-1 {grid-template-columns: auto;}
+    .gacol-ss-2 {grid-template-columns: auto auto;}
+    .gacol-ss-3 {grid-template-columns: auto auto auto;}
+    .gacol-ss-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-ss-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-ss-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-ss-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-ss-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-ss-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-ss-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-ss-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-ss-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 600px) {
     .col-s-1 {width: 8.33%;}
@@ -170,6 +196,19 @@ body {margin: 0;padding: 0;}
     .gcol-s-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-s-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-s-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-s-1 {grid-template-columns: auto;}
+    .gacol-s-2 {grid-template-columns: auto auto;}
+    .gacol-s-3 {grid-template-columns: auto auto auto;}
+    .gacol-s-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-s-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-s-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-s-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-s-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-s-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-s-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-s-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-s-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 768px) {
     .col-1 {width: 8.33%;}
@@ -218,6 +257,19 @@ body {margin: 0;padding: 0;}
     .gcol-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-1 {grid-template-columns: auto;}
+    .gacol-2 {grid-template-columns: auto auto;}
+    .gacol-3 {grid-template-columns: auto auto auto;}
+    .gacol-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 960px) {
     .col-m-1 {width: 8.33%;}
@@ -253,7 +305,6 @@ body {margin: 0;padding: 0;}
     .col-m_95{width:95%}
     .col-m_100{width:100%}
 
-
     .gcol-m-1 {grid-template-columns: 100%;}
     .gcol-m-2 {grid-template-columns: 50% 50%;}
     .gcol-m-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
@@ -266,6 +317,19 @@ body {margin: 0;padding: 0;}
     .gcol-m-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-m-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-m-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-m-1 {grid-template-columns: auto;}
+    .gacol-m-2 {grid-template-columns: auto auto;}
+    .gacol-m-3 {grid-template-columns: auto auto auto;}
+    .gacol-m-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-m-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-m-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-m-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-m-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-m-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-m-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-m-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-m-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 1200px) {
     .col-b-1 {width: 8.33%;}
@@ -314,6 +378,19 @@ body {margin: 0;padding: 0;}
     .gcol-b-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-b-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-b-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-b-1 {grid-template-columns: auto;}
+    .gacol-b-2 {grid-template-columns: auto auto;}
+    .gacol-b-3 {grid-template-columns: auto auto auto;}
+    .gacol-b-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-b-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-b-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-b-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-b-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-b-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-b-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-b-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-b-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 @media only screen and (min-width: 1760px) {
     .col-g-1 {width: 8.33%;}
@@ -349,7 +426,6 @@ body {margin: 0;padding: 0;}
     .col-g_95{width:95%}
     .col-g_100{width:100%}
 
-
     .gcol-g-1 {grid-template-columns: 100%;}
     .gcol-g-2 {grid-template-columns: 50% 50%;}
     .gcol-g-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
@@ -362,11 +438,24 @@ body {margin: 0;padding: 0;}
     .gcol-g-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
     .gcol-g-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
     .gcol-g-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+    .gacol-g-1 {grid-template-columns: auto;}
+    .gacol-g-2 {grid-template-columns: auto auto;}
+    .gacol-g-3 {grid-template-columns: auto auto auto;}
+    .gacol-g-4 {grid-template-columns: auto auto auto auto;}
+    .gacol-g-5 {grid-template-columns: auto auto auto auto auto;}
+    .gacol-g-6 {grid-template-columns: auto auto auto auto auto auto;}
+    .gacol-g-7 {grid-template-columns: auto auto auto auto auto auto auto;}
+    .gacol-g-8 {grid-template-columns: auto auto auto auto auto auto auto auto;}
+    .gacol-g-9 {grid-template-columns: auto auto auto auto auto auto auto auto auto;}
+    .gacol-g-10 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-g-11 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;}
+    .gacol-g-12 {grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;}
 }
 
 /*---- ---- Responsive Grid row ---- ----*/
 /* Adjust size on father elements, row */
-[class*="grow-"] {
+[class*="grow-"],[class*="garow-"] {
     display: grid;
 }
 .grow-1 {grid-template-rows: 100%;}
@@ -381,6 +470,19 @@ body {margin: 0;padding: 0;}
 .grow-10 {grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
 .grow-11 {grid-template-rows: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
 .grow-12 {grid-template-rows: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+.garow-1 {grid-template-rows: auto;}
+.garow-2 {grid-template-rows: auto auto;}
+.garow-3 {grid-template-rows: auto auto auto;}
+.garow-4 {grid-template-rows: auto auto auto auto;}
+.garow-5 {grid-template-rows: auto auto auto auto auto;}
+.garow-6 {grid-template-rows: auto auto auto auto auto auto;}
+.garow-7 {grid-template-rows: auto auto auto auto auto auto auto;}
+.garow-8 {grid-template-rows: auto auto auto auto auto auto auto auto;}
+.garow-9 {grid-template-rows: auto auto auto auto auto auto auto auto auto;}
+.garow-10 {grid-template-rows: auto auto auto auto auto auto auto auto auto auto;}
+.garow-11 {grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;}
+.garow-12 {grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;}
 
 
 /*---- ---- Generic Elements ---- ----*/
@@ -535,7 +637,9 @@ html {font-family: "Lucida Sans", sans-serif, Arial;}
 .flex{display: flex;}
 .wrap{flex-wrap: wrap;}
 .column{flex-direction: column;}
+.column-reverse{flex-direction: column-reverse;}
 .row{flex-direction: row;}
+.row-reverse{flex-direction: row-reverse;}
 .inlineF,.startF{
     display: flex;
     justify-content: flex-start;

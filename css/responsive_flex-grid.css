@@ -24,7 +24,7 @@ body {
 /*---- ---- Responsive Columns Vanilla (col-) & Grid (gcol-) ---- ----*/
 /* Flex & Vanilla: Adjust size on child elements, only column */
 /* Grid: Adjust size on father elements, column  */
-[class*="gcol-"] {
+[class*="gcol-"], [class*="gacol-"] {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -177,6 +177,54 @@ body {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
   }
+  .gacol--1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol--2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol--3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol--4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol--5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol--6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol--7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol--8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol--9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol--10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol--11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol--12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 350px) {
@@ -320,6 +368,54 @@ body {
   .gcol-ss-12 {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
+  }
+  .gacol-ss-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-ss-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-ss-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-ss-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-ss-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-ss-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-ss-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-ss-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-ss-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-ss-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-ss-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-ss-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 }
 
@@ -465,6 +561,54 @@ body {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
   }
+  .gacol-s-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-s-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-s-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-s-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-s-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-s-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-s-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-s-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-s-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-s-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-s-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-s-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -608,6 +752,54 @@ body {
   .gcol-12 {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
+  }
+  .gacol-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 }
 
@@ -753,6 +945,54 @@ body {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
   }
+  .gacol-m-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-m-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-m-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-m-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-m-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-m-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-m-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-m-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-m-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-m-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-m-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-m-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -896,6 +1136,54 @@ body {
   .gcol-b-12 {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
+  }
+  .gacol-b-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-b-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-b-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-b-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-b-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-b-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-b-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-b-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-b-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-b-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-b-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-b-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   }
 }
 
@@ -1041,11 +1329,59 @@ body {
     -ms-grid-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
         grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
   }
+  .gacol-g-1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .gacol-g-2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .gacol-g-3 {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  .gacol-g-4 {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  .gacol-g-5 {
+    -ms-grid-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
+  }
+  .gacol-g-6 {
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  .gacol-g-7 {
+    -ms-grid-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+  }
+  .gacol-g-8 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .gacol-g-9 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-g-10 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-g-11 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  .gacol-g-12 {
+    -ms-grid-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
 }
 
 /*---- ---- Responsive Grid row ---- ----*/
 /* Adjust size on father elements, row */
-[class*="grow-"] {
+[class*="grow-"], [class*="garow-"] {
   display: -ms-grid;
   display: grid;
 }
@@ -1108,6 +1444,66 @@ body {
 .grow-12 {
   -ms-grid-rows: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
       grid-template-rows: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;
+}
+
+.garow-1 {
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.garow-2 {
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.garow-3 {
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+}
+
+.garow-4 {
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
+
+.garow-5 {
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+}
+
+.garow-6 {
+  -ms-grid-rows: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
+}
+
+.garow-7 {
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.garow-8 {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+}
+
+.garow-9 {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+
+.garow-10 {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+}
+
+.garow-11 {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.garow-12 {
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
 /*---- ---- Generic Elements ---- ----*/
@@ -1505,11 +1901,25 @@ html {
           flex-direction: column;
 }
 
+.column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .inlineF, .startF {
