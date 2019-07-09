@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8e9e82;
+  font-family: Arial;
+}
+
+form {
+  margin: 0;
+}
+
+nav {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+nav a {
+  height: 50px;
+  text-align: center;
+  background-color: #424d23;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  background-color: #424d23aa;
+}
+
+nav a:target {
+  background-color: #424d23aa;
+}
+
+.subMenu {
+  border-top: 4px solid #37411d;
+}
+
+.subMenu input[type="submit"] {
+  background-color: #424d23;
+  color: #ffffff;
+  border: none;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.subMenu input[type="submit"]:hover {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  background-color: #424d23aa;
+}
+
+/* *** *** Post edit *** *** */
+main .postEdit input {
+  border-radius: 0;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+main select, main button, main input[type="submit"] {
+  min-height: 30px;
+  min-width: 40px;
+}
+
+main .idCategoryPost {
+  height: 54px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-color: #141414;
+}
