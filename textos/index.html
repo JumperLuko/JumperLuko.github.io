@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <!-- all METAs and LINKs in https://gist.github.com/lancejpollard/1978404 -->
+        <meta charset="UTF-8">
+        <meta name="language" content="pt-br,en-us">
+        <meta property="og:locale" content="pt_BR">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.ico">
+        <link rel="shortcut icon" type="image/png" sizes="64x64" href="../img/favicon-x64.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jumper Luko</title>
+        
+        <meta name="description" content="Olá, pode me chamar de Jumper, e eu gosto muito de Web Design e uma diversidade de coisas do mundo da tecnlogia.">
+        <meta property="og:description" content="Olá, pode me chamar de Jumper, e eu gosto muito de Web Design e uma diversidade de coisas do mundo da tecnlogia.">
+        <meta property="og:site_name" content="Jumper Luko">
+        <!-- <meta property="og:title" content="Jumper Luko"> -->
+        <meta name="theme-color" content="#607d23">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#607d23">
+        <link rel="manifest" href="../manifest.json">
+        <!-- <meta property="og:type" content="website or article"> -->
+        <!-- <meta property="article:section" content="Tutorials"> -->
+        <!-- <meta property="article:tag" content="Facebook, tags, og, open graph"> -->
+        <!-- <meta property="article:published_time" content="date_time"> -->
+        <!-- <meta property="og:image" content="https://mysite.com/img/image.jpg"> -->
+        <!-- <meta property="og:image:type" content="image/jpeg"> -->
+        <!-- <meta property="og:image:width" content="800"> /** PIXELS **/ -->
+        <!-- <meta property="og:image:height" content="600"> /** PIXELS **/ -->
+        <!-- <meta property="og:url" content="https://example.com/page.html"> -->
+        <!-- <meta name="twitter:card" content="summary_large_image"> -->
+        <!-- <meta name="author" content="Jumper_Luko, jumper.luko@gmail.com"> -->
+        <!-- <meta property="article:author" content="Jumper_Luko, jumper.luko@gmail.com"> -->
+        <meta name="owner" content="Jumper_Luko, jumper.luko@gmail.com">
+        <meta name="designer" content="Jumper_Luko, jumper.luko@gmail.com">
+        <meta name="generator" content="VSCode">
+        
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="Jumper_Luko,Web Design,Artigos">
+        <meta name="rating" content="general">
+        <!-- <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" /> -->
+        <!-- <meta http-equiv="Pragma" content="no-cache"> -->
+        <!-- <meta http-equiv="Expires" content="0 days"> -->
+        <!-- <meta name="url" content="http://www.websiteaddrress.com"> -->
+        
+        <link rel="stylesheet" type="text/css" href="../css/responsive_flex-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="" media="only screen and (max-device-width: 480px)" /> -->
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cantarell|Fira+Sans|Oxygen|Roboto|Ubuntu&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+            <a href="../" style="background-image:url('../img/menu/home.svg');" title="Home">Home</a>
+            <a href="../projetos/#projects" style="background-image:url('../img/menu/projects.svg');" title="Projetos" class="projects"><span>Projetos</span></a>
+            <a href="../textos/#texts" style="background-image:url('../img/menu/texts.svg');" title="Textos" class="texts"><span>Textos</span></a>
+            <a href="../contrucao.php#recommendations" style="background-image:url('../img/menu/recommendations.svg');" title="Recomendações" class="recommendations"><span>Recomendações</span></a>
+            <a href="../portfolio/#portfolio" style="background-image:url('../img/menu/portfolio.svg');" title="Portfólio" class="portfolio"><span>Portfólio</span></a>
+            <a href="../empresas/#business" style="background-image:url('../img/menu/business.svg');" title="Empresas" class="business"><span>Empresas</span></a>
+            <a href="../sobre/#about" style="background-image:url('../img/menu/about.svg');" title="Sobre" class="about"><span>Sobre</span></a>
+        </nav>
+        <script>
+            function activeMenu(){
+                var hash = window.location.hash.substr(1);
+                if(hash !== "" && document.getElementsByClassName(hash)[0] != null){
+                    document.getElementsByClassName(hash)[0].className = "activeMenu";
+                }
+            };
+            activeMenu();
+        </script>
+		<main class="h6 flex center">
+               <section style="width:900px;max-width;100%;"><h2 class="h3 centerText" style="font-weight:bold;">$line['name_post']</h2><div>$line['post_post']</a></div></section>
+		</main>
+        <footer>
+            <div class="col-6">
+                <a href="../contrucao.php#projects">Meus Projetos</a>
+                <a href="../contrucao.php#texts">Meus Textos</a>
+                <a href="../contrucao.php#recommendations">Minhas Recomendações</a>
+                <a href="../portfolio/#portfolio">Meu Portifólio</a>
+                <a href="../sobre/#about">Sobre Mim</a>
+                <a href="../empresas/#business">Minhas Tentativas de Empresa</a>
+            </div>
+            <div class="col-6">
+                <a href="https://github.com/JumperLuko">GIT</a>
+                <a href="https://t.me/Jumper_Luko">Telegram</a>
+                <a href="mailto:Jumper.Luko@gmail.com">Jumper.Luko@gmail.com</a>
+                <a href="https://www.linkedin.com/in/thiago-augusto-da-costa-689b4711a/">Linkedin</a>
+                <a href="https://twitter.com/Jumper_Luko">Twitter</a>
+            </div>
+        </footer>
+	</body>
+</html>
