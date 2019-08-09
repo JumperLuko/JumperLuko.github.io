@@ -13,6 +13,7 @@ Please Read for help:
 */
 
 * { box-sizing: border-box;}
+html{font-size:16px;}
 body {margin: 0;padding: 0;}
 
 /*---- ---- Responsive Columns Vanilla (col-) & Grid (gcol-) ---- ----*/
@@ -502,37 +503,16 @@ a.ainherit{
 .displayInherit{display: inherit;}
 
 /*---- Elements Text ----*/
-/* Fonts Sizes, i'm like. You just can remove the point.*/
-@media only screen and (max-width: 767px) {
-.h1{font-size:54px;}
-.h2{font-size:32px;}
-.h3{font-size:22px;}
-.h4{font-size:18px;}
-.h5{font-size:15px;}
-.h6{font-size:13px;}
-.h7{font-size:11px;}
-.h8{font-size:9px;}
-}
-@media only screen and (min-width: 768px) {
-.h1{font-size:63px;}
-.h2{font-size:38px;}
-.h3{font-size:26px;}
-.h4{font-size:21px;}
-.h5{font-size:18px;}
-.h6{font-size:15px;}
-.h7{font-size:13px;}
-.h8{font-size:11px;}
-}
-@media only screen and (min-width: 960px) {
-.h1{font-size:74px;}
-.h2{font-size:44px;}
-.h3{font-size:31px;}
-.h4{font-size:25px;}
-.h5{font-size:21px;}
-.h6{font-size:18px;}
-.h7{font-size:15px;}
-.h8{font-size:13px;}
-}
+.h-1{font-size:5rem;}
+.h0{font-size:3rem;}
+.h1,h1{font-size:2rem;}
+.h2,h2{font-size:1.5rem;}
+.h3,h3{font-size:1.17rem;}
+.h4,h4{font-size:1rem;}
+.h5,h5{font-size:0.83rem;}
+.h6,h6{font-size:0.67rem;}
+.h7{font-size:0.5rem;}
+.h8{font-size:0.3rem;}
 
 /*---- ---- Elements Flex and Grid ---- ----*/
 /* These elements can be used in Flex and grid */
