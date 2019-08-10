@@ -1,8 +1,9 @@
 ---
+title: Construção deste Site
+date: 2019-07-09 01:51:00 Z
+categories:
+- site
 layout: post
-title:  "Construção deste Site"
-date:   2019-07-08 22:51:00 -0300
-categories: site
 author: Jumper
 ---
 
