@@ -8,14 +8,14 @@
 			<a href="/sobre/#about" style="background-image:url(/assets/img/menu/about.svg);" title="Sobre" class="about"><span>Sobre</span></a>
 		</nav>
 		<script>
-			function activeMenu(){
+			// function activeMenu(){
 				var hash = window.location.hash.substr(1);
 				if(hash !== "" && document.getElementsByClassName(hash)[0] != null){
 					document.getElementsByClassName(hash)[0].className = "activeMenu";
 				}
-			};
-			activeMenu();
-			$("a").click(function(e) {
-				setTimeout(activeMenu,1);
-			});
+			// };
+			// activeMenu();
+			// $("a").click(function(e) {
+			// 	setTimeout(activeMenu,1);
+			// });
 		</script>

@@ -3,8 +3,9 @@
 		<meta charset="UTF-8">
 		<meta name="language" content="pt-br,en-us">
 		<meta property="og:locale" content="pt_BR">
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.ico">
-		<link rel="shortcut icon" type="image/png" sizes="64x64" href="/assets/img/favicon-x64.ico">
+		<link rel="icon" type="image/x-icon" sizes="32x32" href="/assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="/assets/img/favicon-x64.ico">
+		<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/assets/img/favicon-x192.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page.title }} - Jumper Luko</title>
 		
@@ -42,6 +43,12 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/responsive_flex-grid.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/style.min.css">
 		<!-- <link rel="stylesheet" type="text/css" href="" media="only screen and (max-device-width: 480px)" /> -->
-		<script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/sw.js')
+					// .then(function() { console.log("Service Worker Registered"); });
+			}
+		</script>
+		<!-- <script type="text/javascript" src="/assets/js/jquery-3.4.1.min.js"></script> -->
 		<link href="https://fonts.googleapis.com/css?family=Cantarell|Fira+Sans|Oxygen|Roboto|Ubuntu&display=swap" rel="stylesheet">
 	</head>
