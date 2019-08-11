@@ -1,33 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+---
 title: JumperLuko
-email: Jumper.Luko@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Olá, pode me chamar de Jumper, e eu gosto muito de Web Design e uma diversidade de coisas do mundo da tecnlogia.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: JumperLuko
-github_username:  JumperLuko
-
+timezone: UTC
 collections:
   authors:
     title: Authors
     output: true
   posts:
     title: Posts
+    output: true
+  uploads:
+    title: Uploads
     output: true
 defaults:
 - scope:
@@ -40,23 +22,15 @@ defaults:
     type: posts
   values:
     layout: post
-
-permalink: /:year/:month/:title/
-
-# Build settings
+email: Jumper.Luko@gmail.com
+description: Olá, pode me chamar de Jumper, e eu gosto muito de Web Design e uma diversidade
+  de coisas do mundo da tecnlogia.
+baseurl: ''
+url: ''
+twitter_username: JumperLuko
+github_username: JumperLuko
+permalink: "/:year/:month/:title/"
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+- jekyll-feed
