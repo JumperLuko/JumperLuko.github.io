@@ -8,9 +8,7 @@ self.addEventListener('install', function(e) {
        '/',
        '/index.html',
        '/index.html?homescreen=1',
-       '/?homescreen=1',
-       '/assets/css/responsive_flex-grid.min.css',
-       '/assets/css/style.min.css'
+       '/?homescreen=1'
      ]);
    })
  );
