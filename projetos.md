@@ -8,4 +8,5 @@ Para o que virá a público, irei exibir abaixo!
 
 <br />
 
--Este site.
+- Este site.
+- [Flurry](https://t.me/FlurryEvento)

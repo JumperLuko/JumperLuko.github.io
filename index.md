@@ -11,4 +11,4 @@ Um site de Thiago Augusto
 
 Você já pode visitar as seguintes guias:
 
-[Portifólio](/portfolio/#portfolio)
+[Textos](/textos/#texts), [Pojetos](/projetos/#projects), [Portifólio](/portfolio/#portfolio)
