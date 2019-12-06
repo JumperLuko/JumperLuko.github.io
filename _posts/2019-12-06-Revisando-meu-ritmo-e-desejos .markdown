@@ -1,5 +1,5 @@
 ---
-title: Revisando meu ritmo e desejos 
+title: Revisando meu ritmo e desejos
 date: 2019-12-05 02:53:52 Z
 categories:
 - vivencia
