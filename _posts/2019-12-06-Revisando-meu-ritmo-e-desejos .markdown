@@ -8,7 +8,7 @@ layout: post
 
 Eu creio estar entrando em um momento de despertar do que realmente quero, tendo enfoque aos meus desejos e saindo saindo o máximo daquela onda de fazer por obrigação. 
 
-Muitos medos que eu tinha to conseguindo superar graças ao Eizo, nós tamo nos ajudando muito, e nunca pude confiar tanto em alguém como ele, para completamente qualquer coisa eu posso falar com ele. 
+Muitos medos que eu tinha to conseguindo superar graças ao Eizo, nós tamo nos ajudando muito.
 
 Estamos procurando algum emprego stable para podermos ter um completa independência e já começar alugando uma casa, para quem está a começar a busca carteira assinada está realmente difícil nessa situação financeira de merda que está o país. Mas nós tentamos, estamos até fazendo curso online de excel para melhorar nossas chances de maneira generalizada. 
 
