@@ -2,6 +2,12 @@ html {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   background: #0e0e0e;
   color: #dadada;
@@ -61,6 +67,20 @@ main > article {
   grid-column: 2 / 3;
   padding: 50px 100px;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 960px) {
+  main > article {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main > article {
+    padding: 50px 50px;
+  }
 }
 
 main > article > h1 {

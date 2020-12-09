@@ -1,0 +1,18 @@
+{
+    "name": "Jumper Luko",
+    "short_name": "Jumper",
+    "theme_color": "#bb5a69",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/?utm_source=homescreen",
+    "lang": "pt-BR",
+    "orientation": "any",
+    // "icons": [
+    //   {
+    //     "src": "./img/favicon-x512.png",
+    //     "type": "image/png",
+    //     "sizes": "512x512"
+    //   }
+    // ],
+    "background_color": "#000000"
+  }

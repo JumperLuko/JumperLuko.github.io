@@ -1,5 +1,6 @@
 html{
     font-size:16px;
+    @media only screen and (max-width: 768px) {font-size:14px;}
 }
 
 body{
@@ -42,7 +43,9 @@ main{
         background:black;
         color:#d6d6d6;
         grid-column:2 / 3;
+        @media only screen and (max-width: 960px) {grid-column:1 / 4;}
         padding:50px 100px;
+        @media only screen and (max-width: 768px) {padding:50px 50px;}
         margin-bottom:100px;
         >h1{
             font-size:3rem;
