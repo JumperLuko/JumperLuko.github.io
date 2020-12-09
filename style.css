@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  background: white;
-  color: black;
+  background: #0e0e0e;
+  color: #dadada;
   min-height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -17,8 +17,8 @@ a {
 }
 
 nav {
-  background: black;
-  color: white;
+  background: #0e0e0e;
+  color: #c7c7c7;
   height: 100px;
   font-weight: bold;
   font-size: 1.5rem;
@@ -26,6 +26,14 @@ nav {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+nav > a:target {
+  background: #ffffff0c;
+}
+
+nav > a:hover {
+  background: #ffffff0c;
 }
 
 body > header {
@@ -71,7 +79,7 @@ main > article > p {
 footer {
   display: -ms-grid;
   display: grid;
-  background: black;
+  background: #0e0e0e;
   color: white;
   height: 200px;
   margin-top: 100px;
@@ -83,5 +91,14 @@ footer {
 }
 
 footer > a {
+  background: #ffffff06;
+}
+
+footer > a:hover {
   background: #ffffff0c;
+}
+
+footer > a > img {
+  max-width: 60px;
+  max-width: 60px;
 }

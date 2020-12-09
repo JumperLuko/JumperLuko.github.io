@@ -3,8 +3,8 @@ html{
 }
 
 body{
-    background:white;
-    color:black;
+    background:#0e0e0e;
+    color:#dadada;
     min-height: 100vh;
     display:grid;
     grid-template-rows:100px 100px auto 300px;
@@ -13,12 +13,16 @@ body{
 a{color:#bb5a69;}
 
 nav{
-    background:black;
-    color:white;
+    background:#0e0e0e;
+    color:#c7c7c7;
     height:100px;
     font-weight:bold;
     font-size:1.5rem;
-    user-select: none;
+    user-select:none;
+    >a{
+        &:target{background:#ffffff0c;}
+        &:hover{background:#ffffff0c;}
+    }
 }
 
 body > header{
@@ -47,7 +51,7 @@ main{
 
 footer{
     display:grid;
-    background:black;
+    background:#0e0e0e;
     color:white;
     height:200px;
     margin-top:100px;
@@ -55,6 +59,11 @@ footer{
     grid-template-columns: 25% 25% 25% 25%;
     bottom:0;
     >a{
-        background:#ffffff0c;
+        background:#ffffff06;
+        &:hover{background:#ffffff0c;}
+        >img{
+            max-width: 60px;
+            max-width: 60px;
+        }
     }
 }
