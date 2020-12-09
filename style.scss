@@ -1,11 +1,11 @@
 html{
-    font-size: 16px;
+    font-size:16px;
 }
 
 body{
     background:#0e0e0e;
     color:#dadada;
-    min-height: 100vh;
+    min-height:100vh;
     display:grid;
     grid-template-rows:100px 100px auto 300px;
 }
@@ -20,32 +20,43 @@ nav{
     font-size:1.5rem;
     user-select:none;
     >a{
-        &:target{background:#ffffff0c;}
+        &:target{
+            background:#ffffff0c;
+            color:#bb5a69;
+        }
         &:hover{background:#ffffff0c;}
     }
 }
 
 body > header{
-    font-size: 2.5rem;
-    height: 100px;
+    font-size:2.5rem;
+    height:100px;
+    color:#c0c0c0;
 }
 
 main{
-    display: grid;
-    grid-template-columns: 8.3334% 83.333333333% 8.3334%;
-    align-items: start;
+    display:grid;
+    grid-template-columns:8.3334% 83.333333333% 8.3334%;
+    align-items:start;
     > article{
         background:black;
-        color:white;
+        color:#d6d6d6;
         grid-column:2 / 3;
         padding:50px 100px;
         margin-bottom:100px;
         >h1{
-            font-size: 3rem;
-            margin-block-end: 0;
+            font-size:3rem;
+            margin-block-end:0;
+            color:#d6d6d6;
         }
-        >h6{margin-block-start:0;}
-        >p{font-size:1.25rem;}
+        >h6{
+            margin-block-start:0;
+            color:#929292;
+        }
+        >p{
+            font-size:1.25rem;
+            color:#d6d6d6;
+        }
     }
 }
 
@@ -55,15 +66,27 @@ footer{
     color:white;
     height:200px;
     margin-top:100px;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:50% 50%;
+    grid-template-columns:25% 25% 25% 25%;
     bottom:0;
     >a{
         background:#ffffff06;
         &:hover{background:#ffffff0c;}
         >img{
-            max-width: 60px;
-            max-width: 60px;
+            max-width:60px;
+            max-width:60px;
+            filter:saturate(0) brightness(10);
+        }
+        &:hover > img{filter:none;}
+        &.github{
+            >img{
+                filter:none;
+                &.inverse{display:none;}
+            }
+            &:hover > img{
+                &.normal{display:none}
+                &.inverse{display:block;}
+            }
         }
     }
 }
