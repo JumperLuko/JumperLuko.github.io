@@ -4,7 +4,7 @@
     "theme_color": "#bb5a69",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/?utm_source=homescreen",
+    "start_url": "/#home?utm_source=homescreen",
     "lang": "pt-BR",
     "orientation": "any",
     // "icons": [
