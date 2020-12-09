@@ -12,6 +12,10 @@ body {
       grid-template-rows: 100px 100px auto 300px;
 }
 
+a {
+  color: #bb5a69;
+}
+
 nav {
   background: black;
   color: white;
@@ -46,6 +50,7 @@ main > article {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   padding: 50px 100px;
+  margin-bottom: 100px;
 }
 
 main > article > h1 {

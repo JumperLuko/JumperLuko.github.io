@@ -10,6 +10,8 @@ body{
     grid-template-rows:100px 100px auto 300px;
 }
 
+a{color:#bb5a69;}
+
 nav{
     background:black;
     color:white;
@@ -33,6 +35,7 @@ main{
         color:white;
         grid-column:2 / 3;
         padding:50px 100px;
+        margin-bottom:100px;
         >h1{
             font-size: 3rem;
             margin-block-end: 0;
