@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<!-- all METAs and LINKs in https://gist.github.com/lancejpollard/1978404 -->
+		<meta charset="UTF-8">
+		<meta name="language" content="en-us">
+		<meta property="og:locale" content="en_US">
+		<!-- <link rel="icon" type="image/png" href=""> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Click on Robot!</title>
+		
+		<meta name="description" content="You can catch that robot?!">
+		<meta property="og:description" content="You can catch that robot?!">
+		<!-- <meta property="og:site_name" content="Site Title"> -->
+		<!-- <meta property="og:title" content="Page Title"> -->
+		<meta name="theme-color" content="#aeaeb0">
+		<!-- <meta property="og:type" content="website or article"> -->
+		<!-- <meta property="article:section" content="Tutorials"> -->
+		<!-- <meta property="article:tag" content="Facebook, tags, og, open graph"> -->
+		<!-- <meta property="article:published_time" content="date_time"> -->
+		<!-- <meta property="og:image" content="https://mysite.com/img/image.jpg"> -->
+		<!-- <meta property="og:image:type" content="image/jpeg"> -->
+		<!-- <meta property="og:image:width" content="800"> /** PIXELS **/ -->
+		<!-- <meta property="og:image:height" content="600"> /** PIXELS **/ -->
+		<!-- <meta property="og:url" content="https://example.com/page.html"> -->
+		<!-- <meta name="twitter:card" content="summary_large_image"> -->
+		<meta name="author" content="Jumper_Luko, jumper.luko@gmail.com">
+		<!-- <meta property="article:author" content="Jumper_Luko, jumper.luko@gmail.com"> -->
+		<!-- <meta name="owner" content="Jumper_Luko, jumper.luko@gmail.com"> -->
+		<!-- <meta name="designer" content="Jumper_Luko, jumper.luko@gmail.com"> -->
+		<!-- <meta name="generator" content="Sublime,Geany,VSCode...."> -->
+		
+		<!-- <meta name="robots" content="index, follow"> -->
+		<!-- <meta name="keywords" content="Words, keys, tags"> -->
+		<!-- <meta name="rating" content="general"> -->
+		<!-- <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" /> -->
+		<!-- <meta http-equiv="Pragma" content="no-cache"> -->
+		<!-- <meta http-equiv="Expires" content="0 days"> -->
+		<!-- <meta name="url" content="http://www.websiteaddrress.com"> -->
+		
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive_flex-grid.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href=""> -->
+		<!-- <link rel="stylesheet" type="text/css" href="" media="only screen and (max-device-width: 480px)" /> -->
+		<!-- <script type="text/javascript" src=""></script> -->
+		
+		<style>
+			body > main > div * {
+				-webkit-transition: linear 0.1s;
+				transition: linear 0.1s;
+			}
+		</style>
+	</head>
+	<body class="inlineF">
+		<main class="flex col-12 wrap">
+			<span class="flex wrap" id="positionsDisplay">
+				<p id="sizeDisplay">
+					<span id="displayX">X size: 0000px. </span><br/>
+					<span id="displayY">Y size: 0000px. </span>
+				</p>
+				<p id="sizeCursor">
+					<span id="cursorX">X cursor: 000px.</span><br/>
+					<span id="cursorY">Y cursor: 000px.</span>
+				</p>
+				<p id="positionRobot">
+					<span id="robotX">X robot: 000px.</span><br/>
+					<span id="robotY">Y robot: 000px.</span>
+				</p>
+			</span>
+			<h1 class="col-12 centerText">Click on Robot!</h1>
+			<div class="flex inlineF col-12" id="boxToRun">
+				<!-- <div class="randomArea flex center"><div class="flex end">RandomArea (30% x 30%)</div></div> -->
+				<img src="img/Robot.svg" class="robot" id="robot">
+			</div>
+		</main>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,600 @@
+/*
+Write by Jumper Luko (jumperluko.com)
+mailto: jumper.luko@gmail.com
+Create: 09 Aug 2018
+Modified: 22 march 2019
+
+Please Read for help:
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* https://www.w3schools.com/csS/css3_flexbox.asp
+* https://www.w3schools.com/w3css/w3css_responsive.asp
+* https://css-tricks.com/snippets/css/complete-guide-grid/
+* https://www.w3schools.com/css/css_grid.asp
+*/
+
+* { box-sizing: border-box;}
+body {margin: 0;padding: 0;}
+
+/*---- ---- Responsive Columns Vanilla (col-) & Grid (gcol-) ---- ----*/
+/* Flex & Vanilla: Adjust size on child elements, only column */
+/* Grid: Adjust size on father elements, column  */
+[class*="gcol-"] {
+    display: grid;
+    grid-template-columns: 100%;
+}
+[class*="col-"] {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 300px) {
+    .col--1 {width: 8.33%;}
+    .col--2 {width: 16.66%;}
+    .col--3 {width: 25%;}
+    .col--4 {width: 33.33%;}
+    .col--5 {width: 41.66%;}
+    .col--6 {width: 50%;}
+    .col--7 {width: 58.33%;}
+    .col--8 {width: 66.66%;}
+    .col--9 {width: 75%;}
+    .col--10 {width: 83.33%;}
+    .col--11 {width: 91.66%;}
+    .col--12 {width: 100%;}
+
+    .col-_5{width:5%}
+    .col-_10{width:10%}
+    .col-_25{width:25%}
+    .col-_20{width:20%}
+    .col-_30{width:30%}
+    .col-_35{width:35%}
+    .col-_40{width:40%}
+    .col-_45{width:45%}
+    .col-_50{width:50%}
+    .col-_55{width:55%}
+    .col-_60{width:60%}
+    .col-_65{width:65%}
+    .col-_70{width:70%}
+    .col-_75{width:75%}
+    .col-_80{width:80%}
+    .col-_85{width:85%}
+    .col-_90{width:90%}
+    .col-_95{width:95%}
+    .col-_100{width:100%}
+
+    
+    .gcol--1 {grid-template-columns: 100%;}
+    .gcol--2 {grid-template-columns: 50% 50%;}
+    .gcol--3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol--4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol--5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol--6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol--7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol--8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol--9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol--10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol--11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol--12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 350px) {
+    .col-ss-1 {width: 8.33%;}
+    .col-ss-2 {width: 16.66%;}
+    .col-ss-3 {width: 25%;}
+    .col-ss-4 {width: 33.33%;}
+    .col-ss-5 {width: 41.66%;}
+    .col-ss-6 {width: 50%;}
+    .col-ss-7 {width: 58.33%;}
+    .col-ss-8 {width: 66.66%;}
+    .col-ss-9 {width: 75%;}
+    .col-ss-10 {width: 83.33%;}
+    .col-ss-11 {width: 91.66%;}
+    .col-ss-12 {width: 100%;}
+
+    .col-ss_5{width:5%}
+    .col-ss_10{width:10%}
+    .col-ss_25{width:25%}
+    .col-ss_20{width:20%}
+    .col-ss_30{width:30%}
+    .col-ss_35{width:35%}
+    .col-ss_40{width:40%}
+    .col-ss_45{width:45%}
+    .col-ss_50{width:50%}
+    .col-ss_55{width:55%}
+    .col-ss_60{width:60%}
+    .col-ss_65{width:65%}
+    .col-ss_70{width:70%}
+    .col-ss_75{width:75%}
+    .col-ss_80{width:80%}
+    .col-ss_85{width:85%}
+    .col-ss_90{width:90%}
+    .col-ss_95{width:95%}
+    .col-ss_100{width:100%}
+
+    
+    .gcol-ss-1 {grid-template-columns: 100%;}
+    .gcol-ss-2 {grid-template-columns: 50% 50%;}
+    .gcol-ss-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-ss-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-ss-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-ss-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-ss-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-ss-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-ss-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-ss-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-ss-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-ss-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .col-s_5{width:5%}
+    .col-s_10{width:10%}
+    .col-s_25{width:25%}
+    .col-s_20{width:20%}
+    .col-s_30{width:30%}
+    .col-s_35{width:35%}
+    .col-s_40{width:40%}
+    .col-s_45{width:45%}
+    .col-s_50{width:50%}
+    .col-s_55{width:55%}
+    .col-s_60{width:60%}
+    .col-s_65{width:65%}
+    .col-s_70{width:70%}
+    .col-s_75{width:75%}
+    .col-s_80{width:80%}
+    .col-s_85{width:85%}
+    .col-s_90{width:90%}
+    .col-s_95{width:95%}
+    .col-s_100{width:100%}
+
+
+    .gcol-s-1 {grid-template-columns: 100%;}
+    .gcol-s-2 {grid-template-columns: 50% 50%;}
+    .gcol-s-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-s-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-s-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-s-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-s-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-s-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-s-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-s-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-s-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-s-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .col_5{width:5%}
+    .col_10{width:10%}
+    .col_25{width:25%}
+    .col_20{width:20%}
+    .col_30{width:30%}
+    .col_35{width:35%}
+    .col_40{width:40%}
+    .col_45{width:45%}
+    .col_50{width:50%}
+    .col_55{width:55%}
+    .col_60{width:60%}
+    .col_65{width:65%}
+    .col_70{width:70%}
+    .col_75{width:75%}
+    .col_80{width:80%}
+    .col_85{width:85%}
+    .col_90{width:90%}
+    .col_95{width:95%}
+    .col_100{width:100%}
+
+
+    .gcol-1 {grid-template-columns: 100%;}
+    .gcol-2 {grid-template-columns: 50% 50%;}
+    .gcol-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 960px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .col-m_5{width:5%}
+    .col-m_10{width:10%}
+    .col-m_25{width:25%}
+    .col-m_20{width:20%}
+    .col-m_30{width:30%}
+    .col-m_35{width:35%}
+    .col-m_40{width:40%}
+    .col-m_45{width:45%}
+    .col-m_50{width:50%}
+    .col-m_55{width:55%}
+    .col-m_60{width:60%}
+    .col-m_65{width:65%}
+    .col-m_70{width:70%}
+    .col-m_75{width:75%}
+    .col-m_80{width:80%}
+    .col-m_85{width:85%}
+    .col-m_90{width:90%}
+    .col-m_95{width:95%}
+    .col-m_100{width:100%}
+
+
+    .gcol-m-1 {grid-template-columns: 100%;}
+    .gcol-m-2 {grid-template-columns: 50% 50%;}
+    .gcol-m-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-m-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-m-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-m-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-m-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-m-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-m-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-m-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-m-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-m-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 1200px) {
+    .col-b-1 {width: 8.33%;}
+    .col-b-2 {width: 16.66%;}
+    .col-b-3 {width: 25%;}
+    .col-b-4 {width: 33.33%;}
+    .col-b-5 {width: 41.66%;}
+    .col-b-6 {width: 50%;}
+    .col-b-7 {width: 58.33%;}
+    .col-b-8 {width: 66.66%;}
+    .col-b-9 {width: 75%;}
+    .col-b-10 {width: 83.33%;}
+    .col-b-11 {width: 91.66%;}
+    .col-b-12 {width: 100%;}
+
+    .col-b_5{width:5%}
+    .col-b_10{width:10%}
+    .col-b_25{width:25%}
+    .col-b_20{width:20%}
+    .col-b_30{width:30%}
+    .col-b_35{width:35%}
+    .col-b_40{width:40%}
+    .col-b_45{width:45%}
+    .col-b_50{width:50%}
+    .col-b_55{width:55%}
+    .col-b_60{width:60%}
+    .col-b_65{width:65%}
+    .col-b_70{width:70%}
+    .col-b_75{width:75%}
+    .col-b_80{width:80%}
+    .col-b_85{width:85%}
+    .col-b_90{width:90%}
+    .col-b_95{width:95%}
+    .col-b_100{width:100%}
+
+
+    .gcol-b-1 {grid-template-columns: 100%;}
+    .gcol-b-2 {grid-template-columns: 50% 50%;}
+    .gcol-b-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-b-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-b-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-b-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-b-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-b-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-b-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-b-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-b-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-b-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+@media only screen and (min-width: 1760px) {
+    .col-g-1 {width: 8.33%;}
+    .col-g-2 {width: 16.66%;}
+    .col-g-3 {width: 25%;}
+    .col-g-4 {width: 33.33%;}
+    .col-g-5 {width: 41.66%;}
+    .col-g-6 {width: 50%;}
+    .col-g-7 {width: 58.33%;}
+    .col-g-8 {width: 66.66%;}
+    .col-g-9 {width: 75%;}
+    .col-g-10 {width: 83.33%;}
+    .col-g-11 {width: 91.66%;}
+    .col-g-12 {width: 100%;}
+
+    .col-g_5{width:5%}
+    .col-g_10{width:10%}
+    .col-g_25{width:25%}
+    .col-g_20{width:20%}
+    .col-g_30{width:30%}
+    .col-g_35{width:35%}
+    .col-g_40{width:40%}
+    .col-g_45{width:45%}
+    .col-g_50{width:50%}
+    .col-g_55{width:55%}
+    .col-g_60{width:60%}
+    .col-g_65{width:65%}
+    .col-g_70{width:70%}
+    .col-g_75{width:75%}
+    .col-g_80{width:80%}
+    .col-g_85{width:85%}
+    .col-g_90{width:90%}
+    .col-g_95{width:95%}
+    .col-g_100{width:100%}
+
+
+    .gcol-g-1 {grid-template-columns: 100%;}
+    .gcol-g-2 {grid-template-columns: 50% 50%;}
+    .gcol-g-3 {grid-template-columns: 33.3334% 33.3334% 33.3334%;}
+    .gcol-g-4 {grid-template-columns: 25% 25% 25% 25%;}
+    .gcol-g-5 {grid-template-columns: 20% 20% 20% 20% 20%;}
+    .gcol-g-6 {grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+    .gcol-g-7 {grid-template-columns: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+    .gcol-g-8 {grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+    .gcol-g-9 {grid-template-columns: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+    .gcol-g-10 {grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+    .gcol-g-11 {grid-template-columns: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+    .gcol-g-12 {grid-template-columns: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+}
+
+/*---- ---- Responsive Grid row ---- ----*/
+/* Adjust size on father elements, row */
+[class*="grow-"] {
+    display: grid;
+}
+.grow-1 {grid-template-rows: 100%;}
+.grow-2 {grid-template-rows: 50% 50%;}
+.grow-3 {grid-template-rows: 33.3334% 33.3334% 33.3334%;}
+.grow-4 {grid-template-rows: 25% 25% 25% 25%;}
+.grow-5 {grid-template-rows: 20% 20% 20% 20% 20%;}
+.grow-6 {grid-template-rows: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;}
+.grow-7 {grid-template-rows: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;}
+.grow-8 {grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+.grow-9 {grid-template-rows: 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112% 11.1112%;}
+.grow-10 {grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+.grow-11 {grid-template-rows: 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909% 9.0909%;}
+.grow-12 {grid-template-rows: 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334% 8.3334%;}
+
+
+/*---- ---- Generic Elements ---- ----*/
+a.ainherit{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.rightText{text-align: right;}
+.leftText{text-align: left;}
+.centerText{text-align:center;}
+.justifyText{text-align: justify;}
+.inheritText{text-align: inherit;}
+
+.displayBlock{display: block;}
+.displayTable{display: table;}
+.displayInherit{display: inherit;}
+
+/*---- Elements Text ----*/
+/* Fonts Sizes, i'm like. You just can remove the point.*/
+@media only screen and (max-width: 767px) {
+.h1{font-size:54px;}
+.h2{font-size:32px;}
+.h3{font-size:22px;}
+.h4{font-size:18px;}
+.h5{font-size:15px;}
+.h6{font-size:13px;}
+.h7{font-size:11px;}
+.h8{font-size:9px;}
+}
+@media only screen and (min-width: 768px) {
+.h1{font-size:63px;}
+.h2{font-size:38px;}
+.h3{font-size:26px;}
+.h4{font-size:21px;}
+.h5{font-size:18px;}
+.h6{font-size:15px;}
+.h7{font-size:13px;}
+.h8{font-size:11px;}
+}
+@media only screen and (min-width: 960px) {
+.h1{font-size:74px;}
+.h2{font-size:44px;}
+.h3{font-size:31px;}
+.h4{font-size:25px;}
+.h5{font-size:21px;}
+.h6{font-size:18px;}
+.h7{font-size:15px;}
+.h8{font-size:13px;}
+}
+
+/*---- ---- Elements Flex and Grid ---- ----*/
+/* These elements can be used in Flex and grid */
+/* Now i am thinking.... Someone can use somethink like "acijcC", thats are Align Content and Items + Justify Contente on Center. Are a default, but hard to think, i need better ideas. If I can not use it, who else could? */
+/* In the problem with "acijcC" I can just write all the description, but could result in a big thing to think. Groups are simply way to understand and apply, but I want it if anyone uses my library a lot, that this one can use without reading the code.  */
+.left,.startH,.jcS,.jcStart{justify-content: flex-start;}
+.left-self,.startH-self,.jsS,.jsStart{justify-self: flex-start;} /* if my dreams come true */
+
+.right,.endH,.jcE,.jcEnd{justify-content: flex-end;}
+.right-self,.endH-self,.jsE,.jsEnd{justify-self: flex-end;} /* if my dreams come true */
+
+.up,.startV,.aciS,.aciStart{
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.up1,.startV1,.acS,.acStart{align-content: flex-start;}
+.up2,.startV2,.aiS,.aiStart,.items-start{align-items: flex-start;}
+.up-self,.startV-self,.asS,.asStart,.self-start{align-self: flex-start;}
+
+.down,.endV,.aciE,.aciEnd{
+     align-content: flex-end;
+     align-items: flex-end;
+ }
+.down1,.endV1,.acE,.acEnd{align-content: flex-end;}
+.down2,.endV2,.aiE,.aiEnd,.items-end{align-items: flex-end;}
+.down-self,.endV-self,.asE,.asEnd,.self-end{align-self: flex-end;}
+
+.center,.jcaciC,.acijcC,.jcaciCenter,.acijcCenter{
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+.centerA,.jcacC,.acjcC,.jcacCenter,.acjcCenter{
+    justify-content:center;
+    align-content: center;
+}
+.centerB,.jcaiC,.aijcC,.jcaiCenter,.aijcCenter{
+    justify-content:center;
+    align-items: center;
+}
+.centerC,.centerV,.aciC,.aciCenter{
+    align-content: center;
+    align-items: center;
+}
+.centerH,.jcC,.jcCenter{justify-content: center;}
+.centerV,.aciC,.aciCenter{
+    align-content: center;
+    align-items: center;
+}
+.centerV1,.acC,.acCenter{align-content: center;}
+.centerV2,.aiC,.aiCenter,.items-center{align-items: center;}
+
+.between,.jcacB,.acjcB,.jcacBetween,.acjcBetween{
+    justify-content: space-between;
+    align-content: space-between;
+}
+.betweenH,.jcB,.jcBetween{justify-content: space-between;}
+.betweenV,.acB,.acBetween{align-content: space-between;}
+
+.around,.jcacA,.acjcA,.jcacAround,.acjcAround{
+    justify-content: space-around;
+    align-content: space-around;
+}
+.aroundH,.jcA,.jcAround{justify-content: space-around;}
+.aroundV,.acA,.acAround{align-content: space-around;}
+
+.stretchV,.stretch,.aciS,.aciStretch{
+    align-content: stretch;
+    align-items: stretch;
+}
+.stretchV1,.acS,.acStretch{align-content: stretch;}
+.stretchV2,.aiS,.aiStretch,.items-stretch{align-items: stretch;}
+
+.jcE,.jcEvenly,.evenly{justify-content: space-evenly;}
+
+.aiB,.aiBaseline,.baseline,.items-baseline{align-items: baseline;}
+
+.inline,.start{
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}.inline-inverse,.end{
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.inlineW,.startW{
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}.inline-inverseW,.endW{
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/*---- ---- Elements Flex only ---- ----*/
+/* These elements can be used only in Flex */
+html {font-family: "Lucida Sans", sans-serif, Arial;}
+.flex{display: flex;}
+.wrap{flex-wrap: wrap;}
+.column{flex-direction: column;}
+.row{flex-direction: row;}
+.inlineF,.startF{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}.inlineF-inverse,.endF{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.inlineWF,.startWF{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}.inlineWF-inverse,.endWF{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/*---- ---- Elements Grid only ---- ----*/
+/* These elements can be used only in Grid */
+.grid{display: grid;}
+
+/*---- ---- Menu Flex ---- ----*/
+/* Menu Dropdown! please use div */
+.dropdown{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row; /* or column */
+    /* put the height and width here! */
+    > .dropdown-title{
+        width: 100%;
+        height: 100%;
+    }
+    > .dropdown-sub{
+        display: none;
+        z-index: 1;
+        flex-direction: column; /* or row */
+        /* width: 100%; */
+    }
+    :hover > .dropdown-sub {
+        display: flex;
+    }
+}
+/*.dropdown:hover > .dropdown-sub  > .dropdown-option:hover{
+    background-color: #abcdef;
+}*/
+/*
+<div class="dropdown" style="height: 20px;">
+    <div class="dropdown-title">Title</div>
+    <div class="dropdown-sub">
+        <div class="dropdown-option">option 1</div>
+        <div class="dropdown-option">option 2</div>
+    </div>
+</div>
+*/
