@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #0e0e0e;
+  background: #000000;
   color: #dadada;
   min-height: 100vh;
   display: -ms-grid;
@@ -23,7 +23,7 @@ a {
 }
 
 nav {
-  background: #0e0e0e;
+  background: #000000;
   color: #c7c7c7;
   height: 100px;
   font-weight: bold;
@@ -52,11 +52,25 @@ body > header {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 8.3334% 83.333333333% 8.3334%;
-      grid-template-columns: 8.3334% 83.333333333% 8.3334%;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+@media only screen and (max-width: 1760px) {
+  main {
+    -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    -ms-grid-columns: 8.3334% 83.333333333% 8.3334%;
+        grid-template-columns: 8.3334% 83.333333333% 8.3334%;
+  }
 }
 
 main > article {
@@ -108,7 +122,7 @@ main > article img {
 footer {
   display: -ms-grid;
   display: grid;
-  background: #0e0e0e;
+  background: #000000;
   color: white;
   height: 200px;
   margin-top: 100px;

@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background:#0e0e0e;
+    background:#000000;
     color:#dadada;
     min-height:100vh;
     display:grid;
@@ -14,7 +14,7 @@ body{
 a{color:#bb5a69;}
 
 nav{
-    background:#0e0e0e;
+    background:#000000;
     color:#c7c7c7;
     height:100px;
     font-weight:bold;
@@ -37,7 +37,9 @@ body > header{
 
 main{
     display:grid;
-    grid-template-columns:8.3334% 83.333333333% 8.3334%;
+    grid-template-columns:25% 50% 25%;
+    @media only screen and (max-width: 1760px) {grid-template-columns:20% 60% 20%;}
+    @media only screen and (max-width: 1200px) {grid-template-columns:8.3334% 83.333333333% 8.3334%;}
     align-items:start;
     > article{
         background:black;
@@ -68,7 +70,7 @@ main{
 
 footer{
     display:grid;
-    background:#0e0e0e;
+    background:#000000;
     color:white;
     height:200px;
     margin-top:100px;
