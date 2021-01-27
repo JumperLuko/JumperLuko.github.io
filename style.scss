@@ -1,7 +1,14 @@
 html{
     font-size:16px;
     @media only screen and (max-width: 768px) {font-size:14px;}
+    scrollbar-color: #555 #000000;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000000;
+}
+body::-webkit-scrollbar-thumb {background: #555;}
+body::-webkit-scrollbar-thumb:hover {background:#888;}
 
 body{
     background:#000000;
