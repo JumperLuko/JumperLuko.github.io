@@ -28,7 +28,7 @@ a{color:#bb5a69;}
 
 nav{
     background:hsl(262deg, 21%, 4%);
-    color:#c7c7c7;
+    color:hsl(0deg, 0%, 70%);
     height:100px;
     font-weight:bold;
     font-size:1.5rem;
@@ -56,7 +56,7 @@ main{
     align-items:start;
     > article{
         background:hsl(262deg, 21%, 5%);
-        color:#d6d6d6;
+        color:hsl(0deg, 0%, 80%);
         grid-column:2 / 3;
         @media only screen and (max-width: 1200px) {grid-column:1 / 4;}
         padding:50px 100px;
@@ -65,7 +65,7 @@ main{
         >h1{
             font-size:3rem;
             margin-block-end:0;
-            color:#d6d6d6;
+            color:hsl(0deg, 0%, 80%);
         }
         >h6{
             margin-block-start:0;
@@ -73,7 +73,7 @@ main{
         }
         >p{
             font-size:1.25rem;
-            color:#d6d6d6;
+            color:hsl(0deg, 0%, 80%);
         }
         img{
             max-width: 100%;
