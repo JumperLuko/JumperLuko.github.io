@@ -11,13 +11,13 @@ html{
 }
 body::-webkit-scrollbar {
     width: 12px;
-    background-color: #000000;
+    background-color: hsl(262deg, 21%, 4%);
 }
-body::-webkit-scrollbar-thumb {background: #555;}
-body::-webkit-scrollbar-thumb:hover {background:#888;}
+body::-webkit-scrollbar-thumb {background: rgba(85, 85, 85, 0.7);}
+body::-webkit-scrollbar-thumb:hover {background:rgba(136, 136, 136, 0.7);}
 
 body{
-    background:#000000;
+    background:hsl(262deg, 21%, 4%);
     color:#dadada;
     min-height:100vh;
     display:grid;
@@ -27,7 +27,7 @@ body{
 a{color:#bb5a69;}
 
 nav{
-    background:#000000;
+    background:hsl(262deg, 21%, 4%);
     color:#c7c7c7;
     height:100px;
     font-weight:bold;
@@ -55,7 +55,7 @@ main{
     @media only screen and (max-width: 1200px) {grid-template-columns:8.3334% 83.333333333% 8.3334%;}
     align-items:start;
     > article{
-        background:black;
+        background:hsl(262deg, 21%, 5%);
         color:#d6d6d6;
         grid-column:2 / 3;
         @media only screen and (max-width: 1200px) {grid-column:1 / 4;}
@@ -83,7 +83,7 @@ main{
 
 footer{
     display:grid;
-    background:#000000;
+    background:hsl(262deg, 21%, 4%);
     color:white;
     height:200px;
     margin-top:100px;
