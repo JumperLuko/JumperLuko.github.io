@@ -55,7 +55,7 @@ main{
     @media only screen and (max-width: 1200px) {grid-template-columns:8.3334% 83.333333333% 8.3334%;}
     align-items:start;
     > article{
-        background:hsl(262deg, 21%, 5%);
+        background:hsl(262deg, 21%, 7%);
         color:hsl(0deg, 0%, 80%);
         grid-column:2 / 3;
         @media only screen and (max-width: 1200px) {grid-column:1 / 4;}
