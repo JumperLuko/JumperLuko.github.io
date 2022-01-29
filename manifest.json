@@ -7,12 +7,16 @@
     "start_url": "/#home?utm_source=homescreen",
     "lang": "pt-BR",
     "orientation": "any",
-    // "icons": [
-    //   {
-    //     "src": "./img/favicon-x512.png",
-    //     "type": "image/png",
-    //     "sizes": "512x512"
-    //   }
-    // ],
+    "icons": [
+      {
+        "src": "./img/favicon-x128.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      },{
+        "src": "./img/favicon-x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      }
+    ],
     "background_color": "#0a080c"
   }

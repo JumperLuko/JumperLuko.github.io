@@ -1616,30 +1616,37 @@ a.ainherit {
 
 .h2, h2 {
   font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .h3, h3 {
   font-size: 1.17rem;
+  margin-top: 2.34rem;
 }
 
 .h4, h4 {
   font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .h5, h5 {
   font-size: 0.83rem;
+  margin-top: 1.66rem;
 }
 
 .h6, h6 {
   font-size: 0.67rem;
+  margin-top: 1.34rem;
 }
 
 .h7 {
   font-size: 0.5rem;
+  margin-top: 1rem;
 }
 
 .h8 {
   font-size: 0.3rem;
+  margin-top: 0.6rem;
 }
 
 /*---- ---- Elements Flex and Grid ---- ----*/
