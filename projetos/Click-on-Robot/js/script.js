@@ -50,15 +50,17 @@ IDboxToRun.addEventListener('mousemove', function(e){
 });
 
 var cursorXRandom;var cursorYRandom;
-setInterval(function(){
-        cursorXRandom = Math.floor(Math.random() * (endRandomX*2 - startRandomX/2) + startRandomX/2);
-        cursorYRandom = Math.floor(Math.random() * (endRandomY*2 - startRandomY/2) + startRandomY/2);
-}, 100);
 
 IDboxToRun.addEventListener('mousemove', function(){
-    if(centerVerify == false){            
-        robotX = displayX-cursorXRandom-robotSizeX/2;
-        robotY = displayY-cursorYRandom-robotSizeY/2;
+    if(centerVerify == false){
+        while (robotX > startRandomX && robotX < endRandomX){
+            cursorXRandom = Math.floor(Math.random() * (endRandomX*2 - startRandomX/2) + startRandomX/2);
+            robotX = displayX-cursorXRandom-robotSizeX/2;
+        }
+            while (robotY > startRandomY && robotY < endRandomY){
+                cursorYRandom = Math.floor(Math.random() * (endRandomY*2 - startRandomY/2) + startRandomY/2);
+                robotY = displayY-cursorYRandom-robotSizeY/2;
+            }
         robotRun();
     }
 });
