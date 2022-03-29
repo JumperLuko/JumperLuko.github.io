@@ -30,9 +30,9 @@ body{
 }
 
 .robot{
-    width: 50px;
-    @media only screen and (min-width: 768px) {width: 80px;}
-    @media only screen and (min-width: 1200px) {width:100px;}
+    width: 5%;
+    @media only screen and (max-height: 500px) {width: 2%;}
+    @media only screen and (max-height: 250px) {width: 1%;}
     cursor: pointer;
     z-index: 2;
     // margin: 10px 0 0 10px;

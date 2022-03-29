@@ -95,5 +95,5 @@ IDrobot.addEventListener('mousedown', function(){
     catchTrue = true;
     setTimeout(function(){
         alert("You Win!");
-    },000);
+    },10);
 });

@@ -42,20 +42,20 @@ body > main > span#positionsDisplay > p {
 }
 
 .robot {
-  width: 50px;
+  width: 5%;
   cursor: pointer;
   z-index: 2;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-height: 500px) {
   .robot {
-    width: 80px;
+    width: 2%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-height: 250px) {
   .robot {
-    width: 100px;
+    width: 1%;
   }
 }
 
