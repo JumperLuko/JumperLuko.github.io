@@ -13,6 +13,7 @@ body{
             height: calc(100vh - 50px);
             border: 1px dashed #0A84FF; //developer
             background: #ffffff;
+            user-select: none;
             *{
                 transition: linear 0.3s;
             }

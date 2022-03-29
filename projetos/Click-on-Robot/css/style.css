@@ -20,6 +20,10 @@ body > main > div {
   height: calc(100vh - 50px);
   border: 1px dashed #0A84FF;
   background: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body > main > div * {
