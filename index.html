@@ -14,7 +14,7 @@
     - @tailwindcss/forms
 -->
 
-<div class="grid grid-cols-1 gap-4 lg:grid-cols-8 lg:gap-8">
+<div class="grid grid-cols-1 lg:grid-cols-8">
   <div></div>
   <div class="rounded-lg bg-gray-200 lg:col-span-6">
     <header class="">
@@ -34,18 +34,85 @@
     </header>
   </div>
   <div></div>
+  <div></div>
+  <div class="rounded-lg bg-gray-300 lg:col-span-6 min-h-[500px] py-10"></div>
+  <div></div>
 </div>
 
 
 
 
-
-
+<!-- component -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+    theme: {
+        extend: {
+            animation: {
+                'spin-slow': 'spin 5s linear infinite',
+            },
+        },
+    },
+    plugins: [],
+}
+</script>
+<div class="grid gap-4 lg:grid-cols-6">
+  <div></div>
+  <div class="flex py-10 items-center">
+    <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+      <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
+      <div class="relative rounded-[15px] bg-white p-6">
+        <div class="space-y-4">
+          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
+          <p class="font-md text-slate-500">Some Image HERE <br/><br/> ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore .</p>
+          <p class="text-lg text-center font-semibold text-slate-800">Cases</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex py-10 items-center">
+    <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+      <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
+      <div class="relative rounded-[15px] bg-white p-6">
+        <div class="space-y-4">
+          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
+          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
+          <p class="text-lg text-center font-semibold text-slate-800">Tools i use</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex py-10 items-center">
+    <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+      <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
+      <div class="relative rounded-[15px] bg-white p-6">
+        <div class="space-y-4">
+          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
+          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
+          <p class="text-lg text-center font-semibold text-slate-800">My services</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex py-10 items-center">
+    <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
+      <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
+      <div class="relative rounded-[15px] bg-white p-6">
+        <div class="space-y-4">
+          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
+          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
+          <p class="text-lg text-center font-semibold text-slate-800">About me</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
   
   
 <!-- component -->
 <!-- Created By Joker Banny -->
-<div class="flex h-screen items-center justify-center bg-white px-6 md:px-60">
+<div class="flex py-10 items-center justify-center bg-white px-6 md:px-60">
   <div class="space-y-6 border-l-2 border-dashed">
     <div class="relative w-full">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500">
