@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  
 </head>
-<body>
+<body class="dark:bg-black">
+  
 <!--
   Heads up! 👋
 
@@ -16,16 +18,16 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-8">
   <div></div>
-  <div class="rounded-lg bg-gray-200 lg:col-span-6">
+  <div class="rounded-lg bg-gray-200 dark:bg-gray-800 lg:col-span-6">
     <header class="">
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <div class="text-center sm:text-left">
-            <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+            <h1 class="text-2xl font-bold text-gray-900 dark:text-gray-100 sm:text-3xl">
               UX / UI Designer
             </h1>
     
-            <p class="mt-1.5 text-sm text-gray-500">
+            <p class="mt-1.5 text-sm text-gray-500 dark:text-gray-300">
               Thiago Augusto
             </p>
           </div>
@@ -35,12 +37,34 @@
   </div>
   <div></div>
   <div></div>
-  <div class="rounded-lg bg-gray-300 lg:col-span-6 min-h-[500px] py-10"></div>
+  <div class="rounded-lg bg-gray-300 dark:bg-gray-900 lg:col-span-6 min-h-[500px] py-10">
+    <div id="slideshow" class="flex w-full justify-center">
+      <!-- Slide 1 -->
+      <div id="slide-1" class="duration-700 ease-in-out">
+          <img src="https://media.discordapp.net/attachments/1156355223611248722/1175203457779642398/F-OMmt6bAAAnnXs.png" class="block w-full h-[500px]" alt="Slide 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div id="slide-2" class="hidden duration-700 ease-in-out">
+          <img src="https://media.discordapp.net/attachments/1156355223611248722/1174851161061347349/Z.png" class="block w-full h-[500px]" alt="Slide 2" />
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
   <div></div>
 </div>
 
-
-
+<script>
+  let slides = document.querySelectorAll('#slideshow > div');
+   let currentSlide = 0;
+   
+   function showSlide() {
+      slides[currentSlide].classList.add('hidden');
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].classList.remove('hidden');
+   }
+   
+   setInterval(showSlide, 3000); // Change slide every 3 seconds
+</script>
 
 <!-- component -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -155,6 +179,10 @@
       </div>
     </div>
   </div>
+
+  # create a div 
+
+  
 </div>
 </body>
 </html>
