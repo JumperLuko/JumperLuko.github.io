@@ -4,49 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="style.css">
 
   <script>
-    tailwind.config = {
-    darkMode: 'class',
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        },
-        animation: {
-            'spin-slow': 'spin 5s linear infinite',
-        },
-      },
-    },
-    plugins: [],
-    }
+    // // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    // if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    //     document.documentElement.classList.add('dark');
+    // } else {
+    //     document.documentElement.classList.remove('dark')
+    // }
   </script>
-
-  <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-  </script>
-  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" /> -->
 
 </head>
 
 
 <body class="dark:bg-black">
 
-  <button class="rounded py-4 px-2 bg-indigo-600 hover:bg-indigo-900">Submit</button>
-
 <!-- This is an example component -->
-<button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+<!-- <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
     <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-</button>
+</button> -->
 
-<script>
+<!-- <script>
   var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
   var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
@@ -87,7 +68,7 @@
       }
       
   });
-</script>
+</script> -->
 
 <!--
   Heads up! 👋
@@ -95,6 +76,206 @@
   Plugins:
     - @tailwindcss/forms
 -->
+
+
+<button id="theme-button" class="bg-white dark:bg-gray-800 dark:text-white">Switch Theme</button>
+<script>
+
+if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else if (localStorage.theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    // Default to system theme
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }
+  
+  const themeButton = document.querySelector('#theme-button');
+
+themeButton.addEventListener('click', function() {
+  if (localStorage.theme === 'dark') {
+    localStorage.theme = 'light';
+    document.documentElement.classList.remove('dark');
+  } else if (localStorage.theme === 'light') {
+    localStorage.theme = 'system';
+    document.documentElement.classList.remove('dark');
+  } else {
+    localStorage.theme = 'dark';
+    document.documentElement.classList.add('dark');
+  }
+});
+
+
+
+  function updateThemeButtonText() {
+    if (localStorage.theme === 'dark') {
+      themeButton.textContent = 'Dark Mode';
+    } else if (localStorage.theme === 'light') {
+      themeButton.textContent = 'Light Mode';
+    } else {
+      themeButton.textContent = 'System Theme';
+    }
+  }
+
+  // Call this function when the page loads
+  updateThemeButtonText();
+
+  // Also call this function whenever the theme changes
+  themeButton.addEventListener('click', updateThemeButtonText);
+
+</script>
+
+<!-- <button id="theme-switcher">
+  <svg id="theme-default-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+  </svg>
+  <svg id="theme-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+  </svg>
+  <svg id="theme-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+  </svg>
+</button> -->
+
+<!-- <button id="theme-switcher" class="bg-white dark:bg-gray-800 dark:text-white">Switch Theme</button> -->
+<script>
+  // const savedTheme = localStorage.getItem('theme');
+  // if (savedTheme) {
+  //   document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+  // } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  //   document.documentElement.classList.add('dark');
+  // }
+
+  // const themeSwitcher = document.getElementById('theme-switcher');
+
+  // themeSwitcher.addEventListener('click', () => {
+  //   document.documentElement.classList.toggle('dark');
+  //   const isDarkMode = document.documentElement.classList.contains('dark');
+  //   localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  // });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    const isDarkMode = e.matches;
+    document.documentElement.classList.toggle('dark', isDarkMode);
+    // localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    localStorage.theme = 'system';
+    // document.documentElement.classList.remove('dark');
+    updateThemeButtonText();
+  });
+
+</script>
+
+
+
+<!-- <button id="theme-button" class="bg-white dark:bg-gray-800 dark:text-white">Switch Theme</button>
+<script>
+ const themeButton = document.querySelector('#theme-button');
+
+ // Load theme from localStorage or default to system theme
+ const savedTheme = localStorage.getItem('theme');
+ if (savedTheme) {
+   document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+ } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+   document.documentElement.classList.add('dark');
+ }
+
+ // Update theme button text based on the current theme
+ function updateThemeButtonText() {
+   if (localStorage.theme === 'dark') {
+     themeButton.textContent = 'Switch to Light Mode';
+   } else if (localStorage.theme === 'light') {
+     themeButton.textContent = 'Switch to Dark Mode';
+   } else {
+     themeButton.textContent = 'Switch to System Theme';
+   }
+ }
+
+ // Call this function when the page loads
+ updateThemeButtonText();
+
+ // Handle theme switch
+ themeButton.addEventListener('click', () => {
+   const isDarkMode = document.documentElement.classList.contains('dark');
+   if (isDarkMode) {
+     localStorage.theme = 'light';
+     document.documentElement.classList.remove('dark');
+   } else {
+     localStorage.theme = 'dark';
+     document.documentElement.classList.add('dark');
+   }
+   updateThemeButtonText();
+ });
+
+ // Listen for changes in system theme
+ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+   const isDarkMode = e.matches;
+   document.documentElement.classList.toggle('dark', isDarkMode);
+   localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+   updateThemeButtonText();
+ });
+</script> -->
+
+
+
+
+
+
+
+<!-- <button id="theme-switcher">Switch Theme</button>
+<script>
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    if (e.matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  });
+
+
+  if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else if (localStorage.theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }
+
+
+  document.getElementById('theme-switcher').addEventListener('click', function() {
+    if (localStorage.theme === 'dark') {
+      localStorage.theme = 'light';
+      document.documentElement.classList.remove('dark');
+    } else if (localStorage.theme === 'light') {
+      localStorage.theme = 'system';
+      document.documentElement.classList.remove('dark');
+    } else {
+      localStorage.theme = 'dark';
+      document.documentElement.classList.add('dark');
+    }
+  });
+
+</script> -->
+
+
+<!-- <button class="px-10 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-700
+  dark:bg-amber-500 dark:text-dark dark:hover:bg-red-500
+  ease-in duration-300">
+  I am a button
+</button> -->
+
+
+
+
+
+
 
 <div class="grid grid-cols-1 lg:grid-cols-8">
   <div></div>
