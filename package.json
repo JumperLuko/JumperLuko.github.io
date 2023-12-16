@@ -1,0 +1,15 @@
+{
+  "name": "jumperux",
+  "version": "1.0.0",
+  "description": "[Notion Portfolio](https://dear-temper-d19.notion.site/Thiago-Augusto-4c4b828773b346b1a488ece3fe296dc7)",
+  "main": "tailwindcss-3.3.5.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
