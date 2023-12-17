@@ -81,42 +81,40 @@
 <button id="theme-button" class="bg-white dark:bg-gray-800 dark:text-white">Switch Theme</button>
 <script>
 
-if (localStorage.theme === 'dark') {
-    document.documentElement.classList.add('dark');
-  } else if (localStorage.theme === 'light') {
-    document.documentElement.classList.remove('dark');
-  } else {
-    // Default to system theme
+  function defaultSystemTheme() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
   }
-  
+
+  // Apply theme on load page
+  if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else if (localStorage.theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    defaultSystemTheme();
+  }
+    
   const themeButton = document.querySelector('#theme-button');
 
-themeButton.addEventListener('click', function() {
-  if (localStorage.theme === 'dark') {
-    localStorage.theme = 'light';
-    document.documentElement.classList.remove('dark');
-  } else if (localStorage.theme === 'light') {
-    localStorage.theme = 'system';
-    // Default to system theme
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-    } else {
+  // Apply theme on click in the button
+  themeButton.addEventListener('click', function() {
+    if (localStorage.theme === 'dark') {
+      localStorage.theme = 'light';
       document.documentElement.classList.remove('dark');
+    } else if (localStorage.theme === 'light') {
+      localStorage.theme = 'system';
+      defaultSystemTheme();
+    } else {
+      localStorage.theme = 'dark';
+      document.documentElement.classList.add('dark');
     }
-    // document.documentElement.classList.remove('dark');
-  } else {
-    localStorage.theme = 'dark';
-    document.documentElement.classList.add('dark');
-  }
-});
-
-
-
+  });
+  
+  // Update the text in button
   function updateThemeButtonText() {
     if (localStorage.theme === 'dark') {
       themeButton.textContent = 'Dark Mode';
@@ -132,6 +130,16 @@ themeButton.addEventListener('click', function() {
 
   // Also call this function whenever the theme changes
   themeButton.addEventListener('click', updateThemeButtonText);
+
+  // Update theme if is in theme system theme
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (localStorage.theme === 'system') {
+      const isDarkMode = e.matches;
+      document.documentElement.classList.toggle('dark', isDarkMode);
+      localStorage.theme = 'system';
+      updateThemeButtonText();
+    }
+  });
 
 </script>
 
@@ -164,20 +172,7 @@ themeButton.addEventListener('click', function() {
   //   localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
   // });
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (localStorage.theme === 'dark') {
-      themeButton.textContent = 'Dark Mode';
-    } else if (localStorage.theme === 'light') {
-      themeButton.textContent = 'Light Mode';
-    } else {
-      const isDarkMode = e.matches;
-      document.documentElement.classList.toggle('dark', isDarkMode);
-      // localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-      localStorage.theme = 'system';
-      // document.documentElement.classList.remove('dark');
-      updateThemeButtonText();
-    }
-  });
+
 
 </script>
 
