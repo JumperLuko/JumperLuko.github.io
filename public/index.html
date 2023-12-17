@@ -159,12 +159,18 @@ themeButton.addEventListener('click', function() {
   // });
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    const isDarkMode = e.matches;
-    document.documentElement.classList.toggle('dark', isDarkMode);
-    // localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    localStorage.theme = 'system';
-    // document.documentElement.classList.remove('dark');
-    updateThemeButtonText();
+    if (localStorage.theme === 'dark') {
+      themeButton.textContent = 'Dark Mode';
+    } else if (localStorage.theme === 'light') {
+      themeButton.textContent = 'Light Mode';
+    } else {
+      const isDarkMode = e.matches;
+      document.documentElement.classList.toggle('dark', isDarkMode);
+      // localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      localStorage.theme = 'system';
+      // document.documentElement.classList.remove('dark');
+      updateThemeButtonText();
+    }
   });
 
 </script>
