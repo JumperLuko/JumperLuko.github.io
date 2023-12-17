@@ -102,7 +102,13 @@ themeButton.addEventListener('click', function() {
     document.documentElement.classList.remove('dark');
   } else if (localStorage.theme === 'light') {
     localStorage.theme = 'system';
-    document.documentElement.classList.remove('dark');
+    // Default to system theme
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    // document.documentElement.classList.remove('dark');
   } else {
     localStorage.theme = 'dark';
     document.documentElement.classList.add('dark');
