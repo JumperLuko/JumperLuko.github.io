@@ -9,13 +9,79 @@
 </head>
 <body class="dark:bg-black">
 
-<button id="theme-button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-  <svg id="theme-toggle-dark-icon" class="w-5 h-5 relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" /></svg>
-  <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="4"></circle><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path></svg>
-  <svg id="theme-toggle-system-icon" class="w-5 h-5 hidden relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" /></svg>
-</button>
-<script>
+<!-- <button class="px-10 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-700
+  dark:bg-amber-500 dark:text-dark dark:hover:bg-red-500
+  ease-in duration-300">
+  I am a button
+</button> -->
 
+<!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+<div class="grid grid-cols-1 lg:grid-cols-8">
+  <div>
+    <a href="." class="text-gray-100 dark:text-gray-950 focus:text-black dark:focus:text-white">
+      <svg class="w-[60px] h-[60px] m-[20px]" width="79" height="97" viewBox="0 0 79 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.6473 15.1222C13.0717 16.3883 13.9274 16.5435 15.6153 17.1062" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M15.6152 17.1062C15.0569 21.5728 14.6936 10.9716 16.0561 7.62724C20.3756 -2.97521 29.4669 11.0264 26.4168 18.8697C23.1022 27.3927 14.0633 20.338 15.8356 13.2485C18.7282 1.67844 29.1726 16.8305 17.5992 22.6171C14.2951 24.2692 19.0602 6.2807 25.535 12.036C29.8279 15.8519 24.8315 28.5916 20.7955 18.0981C18.3554 11.7537 27.2288 6.72844 25.3146 15.3426C21.998 30.2671 7.85025 16.4696 17.5992 11.5952C22.8648 8.96232 23.2888 24.4949 17.5992 24.1602C15.3775 24.0295 14.989 19.0901 17.5992 19.0901C20.6658 19.0901 22.1282 24.8215 18.4809 24.8215C7.33293 24.8215 19.916 13.794 17.4889 19.8617C17.0172 21.0411 14.2272 17.633 14.7334 16.1142C15.3015 14.41 16.6479 12.7089 18.04 11.5952C22.8752 7.72707 20.4511 19.3785 15.6152 14.2404C11.2599 9.61295 21.3466 3.79671 21.3466 12.2565C21.3466 19.9916 12.2768 15.3988 13.7415 10.2725C14.7608 6.70487 17.5992 16.6683 17.5992 7.18636" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M65.2142 21.074C65.2142 15.5815 64.2677 2.11621 72.7091 2.11621C80.0387 2.11621 76.896 22.9265 68.3003 15.8937C58.9056 8.20713 75.8998 -2.60141 76.2361 9.17028C76.6061 22.1184 61.1728 20.8331 68.1901 12.2564C74.2365 4.86639 74.5857 22.1762 66.7572 22.1762C56.0735 22.1762 71.166 4.57695 71.166 17.2163C71.166 28.3243 58.3408 20.8457 63.6711 11.1542C70.2565 -0.819173 71.7351 23.8312 64.2222 17.9879C57.5123 12.7691 70.5633 2.8453 72.0478 8.28853C75.128 19.5828 52.3931 18.0234 61.2462 9.17028C70.686 -0.269446 63.4485 29.4938 61.3565 17.9879C59.1535 5.87137 77.0022 11.0787 69.1821 23.4989C61.7761 35.2613 60.4941 10.6226 68.0799 18.2083C77.3971 27.5255 53.3874 28.067 63.6711 21.074C73.7538 14.2178 68.2834 28.9874 62.3484 21.074C61.6066 20.0849 65.045 16.3834 65.2142 19.0901C65.2633 19.877 65.2142 25.8865 65.2142 23.058" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M5.69541 58.7692C16.1856 70.425 23.8034 94.0503 44.603 84.4505C51.1361 81.4352 64.1604 72.548 67.1981 65.7131C67.6325 64.7358 76.0347 51.0538 76.1259 51.0538C77.2805 51.0538 71.9886 65.8463 71.166 67.697C68.5432 73.5984 57.9172 75.6834 55.2944 81.5847C50.5078 92.3546 27.6928 96.8297 20.4649 87.5366C15.714 81.4283 11.4304 78.1208 8.12025 70.673C3.70474 60.7381 7.87001 65.6267 12.0882 72.6569C23.9144 92.3672 42.1522 78.5197 53.3104 66.7051C54.6881 65.2464 65.8722 56.2575 64.7733 58.7692C62.3184 64.3805 59.9308 69.3821 56.8374 74.6409C52.1441 82.6196 42.6967 86.5446 33.9117 86.5446C18.1892 86.5446 13.1182 78.4644 7.23849 66.7051C2.86493 57.9579 17.0655 74.1352 18.7014 76.5146C24.1128 84.3859 32.976 93.4118 42.3986 90.5126C52.136 87.5165 62.4983 74.2265 65.2142 64.7211C68.5024 53.2121 66.2713 62.9514 64.2222 68.689C60.7434 78.4296 53.4931 88.6955 42.3986 90.4023C31.6511 92.0558 28.4624 88.8485 18.5911 86.6549C13.103 85.4353 8.77748 73.7574 8.78157 73.7591C17.3987 77.4522 21.1624 92.2761 32.4788 92.2761C41.0096 92.2761 54.5344 85.3988 59.2623 78.1679C62.9118 72.5863 70.0856 54.2257 65.655 59.2101C62.6808 62.5562 61.6835 69.6712 59.2623 73.6489C54.3899 81.6536 50.9544 86.6479 42.5089 90.9534C29.605 97.5319 23.4333 95.5315 11.6473 88.0877C9.97141 87.0293 -1.64465 72.6569 3.71146 72.6569C12.8661 72.6569 20.7251 86.1887 31.046 86.5446C43.7105 86.9813 51.1079 79.7092 59.2623 71.5547C61.3896 69.4275 71.3144 55.3637 63.2302 60.7532" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M3.71149 66.7051C3.71149 68.1137 1.88639 67.0486 4.15236 66.2642C9.93041 64.2641 15.6104 62.6049 21.5671 61.1941C31.5821 58.8221 43.0686 55.3404 53.3104 54.8013C63.7119 54.2539 36.8885 63.6458 33.03 64.7211C24.734 67.0331 8.06652 66.7613 25.535 63.178C31.7197 61.9094 52.9339 60.2892 52.8696 60.3123C45.8079 62.8545 37.7641 63.4247 30.3847 64.2802C25.784 64.8137 13.222 67.9961 16.497 64.7211C20.0249 61.1932 30.6533 62.859 35.0139 62.2963C42.2414 61.3637 49.5586 59.0292 56.8375 58.7692C63.1552 58.5436 58.1629 61.4697 54.8535 62.7372C46.6602 65.875 33.1891 70.4526 24.3226 70.4526C7.63271 70.4526 57.1966 61.265 73.8113 62.8474C82.5673 63.6813 64.0638 67.5843 62.7894 67.8073C50.9904 69.8721 38.6392 68.6812 27.0781 70.7832C26.7947 70.8347 37.5662 72.7741 40.6352 72.5467C43.0708 72.3663 59.9016 68.9095 54.6331 68.9095C45.0966 68.9095 35.8692 71.6375 26.1963 70.5628C21.9754 70.0938 37.8549 64.1664 39.3125 63.7291C43.7374 62.4017 54.7851 60.7532 44.2724 60.7532C38.827 60.7532 22.7441 63.1997 27.9599 61.635C32.9342 60.1427 40.6712 58.9897 45.8155 58.9897C53.5588 58.9897 30.5768 61.8054 22.8897 62.7372C20.6276 63.0114 6.92163 64.398 16.0561 62.7372C21.5887 61.7312 38.0666 58.3044 32.6993 59.9817C23.7526 62.7775 13.4988 63.832 4.15236 64.6109C-1.60354 65.0906 18.4397 57.9225 21.5671 56.7853" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+    </a>
+  </div>
+  <div class="lg:col-span-6">
+    <header class="">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="text-center sm:text-left">
+            <h1 class="text-2xl font-bold text-clifford dark:text-gray-100 sm:text-3xl">
+              UX / UI Designer
+            </h1>
+    
+            <!-- <p class="mt-1.5 text-sm text-gray-500 dark:text-gray-300">
+              Thiago Augusto
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="rounded-3xl bg-gray-300 dark:bg-gray-900 h-[580px] py-10 flex">
+      <div id="slideshow" class="flex w-full">
+        <!-- Slide 1 -->
+        <div id="slide-1" class="grid grid-cols-1 lg:grid-cols-8 items-stretch duration-700 ease-in-out bg-gray-200 dark:bg-gray-800 darl:text-gray-200 w-full h-full">
+            <div class="flex lg:col-span-3 items-center justify-center"><img src="profile-pic.webp" class="w-[200px]" alt="Profile Picture" /></div>
+            <div class="lg:col-span-5 bg-gray-300 dark:bg-gray-700 dark:text-gray-300 p-10">
+              <h2 class="rounded-3xl bg-gray-200 dark:bg-gray-800 dark:text-gray-200 text-xl w-max px-7 py-4">Thiago Augusto</h2>
+              <div class="block my-10 mx-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Velit laoreet id donec ultrices. </p>
+                <p>Diam volutpat commodo sed egestas. Gravida dictum fusce ut placerat. Aliquam faucibus purus in massa tempor nec feugiat nisl. Libero enim sed faucibus turpis in. Nibh praesent tristique magna sit amet.</p>
+                <p> In egestas erat imperdiet sed euismod nisi porta lorem. Amet purus gravida quis blandit turpis cursus. Imperdiet nulla malesuada pellentesque elit eget gravida cum.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div id="slide-2" class="hidden duration-700 ease-in-out">
+            <img src="https://media.discordapp.net/attachments/1156355223611248722/1174851161061347349/Z.png" class="block w-full h-[500px]" alt="Slide 2" />
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center items-start p-4">
+    <button id="theme-button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+      <svg id="theme-toggle-dark-icon" class="w-5 h-5 relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" /></svg>
+      <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><circle cx="12" cy="12" r="4"></circle><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path></svg>
+      <svg id="theme-toggle-system-icon" class="w-5 h-5 hidden relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500" style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" /></svg>
+    </button>
+  </div>
+</div>
+
+<!-- Update de theme of the page -->
+<script>
   function defaultSystemTheme() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.classList.add('dark');
@@ -88,70 +154,19 @@
       updateThemeButtonText();
     }
   });
-
 </script>
 
-<!-- <button class="px-10 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-700
-  dark:bg-amber-500 dark:text-dark dark:hover:bg-red-500
-  ease-in duration-300">
-  I am a button
-</button> -->
-
-
-<!--
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
--->
-<div class="grid grid-cols-1 lg:grid-cols-8">
-  <div></div>
-  <div class="rounded-lg bg-gray-200 dark:bg-gray-800 lg:col-span-6">
-    <header class="">
-      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <div class="text-center sm:text-left">
-            <h1 class="text-2xl font-bold text-clifford dark:text-gray-100 sm:text-3xl">
-              UX / UI Designer
-            </h1>
-    
-            <p class="mt-1.5 text-sm text-gray-500 dark:text-gray-300">
-              Thiago Augusto
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
-  <div></div>
-  <div></div>
-  <div class="rounded-lg bg-gray-300 dark:bg-gray-900 lg:col-span-6 min-h-[500px] py-10">
-    <div id="slideshow" class="flex w-full justify-center">
-      <!-- Slide 1 -->
-      <div id="slide-1" class="duration-700 ease-in-out">
-          <img src="https://media.discordapp.net/attachments/1156355223611248722/1175203457779642398/F-OMmt6bAAAnnXs.png" class="block w-full h-[500px]" alt="Slide 1" />
-      </div>
-      <!-- Slide 2 -->
-      <div id="slide-2" class="hidden duration-700 ease-in-out">
-          <img src="https://media.discordapp.net/attachments/1156355223611248722/1174851161061347349/Z.png" class="block w-full h-[500px]" alt="Slide 2" />
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
-  </div>
-  <div></div>
-</div>
-
 <script>
-  let slides = document.querySelectorAll('#slideshow > div');
-   let currentSlide = 0;
+  // let slides = document.querySelectorAll('#slideshow > div');
+  //  let currentSlide = 0;
    
-   function showSlide() {
-      slides[currentSlide].classList.add('hidden');
-      currentSlide = (currentSlide+1)%slides.length;
-      slides[currentSlide].classList.remove('hidden');
-   }
+  //  function showSlide() {
+  //     slides[currentSlide].classList.add('hidden');
+  //     currentSlide = (currentSlide+1)%slides.length;
+  //     slides[currentSlide].classList.remove('hidden');
+  //  }
    
-   setInterval(showSlide, 3000); // Change slide every 3 seconds
+  //  setInterval(showSlide, 3000); // Change slide every 3 seconds
 </script>
 
 <!-- component -->
@@ -165,7 +180,7 @@
         <div class="space-y-4">
           <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
           <p class="font-md text-slate-500">Some Image HERE <br/><br/> ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore .</p>
-          <p class="text-lg text-center font-semibold text-slate-800">Cases</p>
+          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">Cases</p>
         </div>
       </div>
     </div>
@@ -177,7 +192,7 @@
         <div class="space-y-4">
           <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
           <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800">Tools i use</p>
+          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">Tools i use</p>
         </div>
       </div>
     </div>
@@ -189,7 +204,7 @@
         <div class="space-y-4">
           <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
           <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800">My services</p>
+          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">My services</p>
         </div>
       </div>
     </div>
@@ -201,64 +216,83 @@
         <div class="space-y-4">
           <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
           <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800">About me</p>
+          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">About me</p>
         </div>
       </div>
     </div>
   </div>
   
 </div>
-  
+
+<div class="w-full">
+  <div class="grid grid-cols-1 lg:grid-cols-3">
+    <div class="flex justify-center items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-200"><img src="" alt="*Star image*"></div>
+    <div class="col-span-2 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 py-10 px-8">
+      <h1 class="text-5xl p-5">Cases</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis auctor elit sed vulputate mi sit amet. Elementum sagittis vitae et leo duis ut diam quam. Ligula ullamcorper malesuada proin libero. Elit sed vulputate mi sit amet mauris commodo quis. Pulvinar etiam non quam lacus. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Purus gravida quis blandit turpis cursus in hac habitasse. Dui accumsan sit amet nulla. Urna porttitor rhoncus dolor purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lobortis elementum nibh tellus molestie nunc non. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Ut morbi tincidunt augue interdum velit euismod in.</p>
+      <p>Eu turpis egestas pretium aenean pharetra magna. Interdum velit laoreet id donec. Vitae ultricies leo integer malesuada nunc vel risus. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Pretium aenean pharetra magna ac. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Dolor morbi non arcu risus quis. Sit amet justo donec enim diam vulputate ut pharetra. Netus et malesuada fames ac turpis egestas maecenas. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Eleifend quam adipiscing vitae proin. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Massa sapien faucibus et molestie ac feugiat sed lectus. Mauris nunc congue nisi vitae suscipit.</p>
+    </div>
+  </div>
+  <div class="w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+    <div>
+      <h2 class="text-3xl">Case 1</h2>
+    </div>
+    <div>
+      <h2 class="text-3xl text-right">Case 2</h2>
+    </div>
+  <div>
+    <h2 class="text-3xl">Case 3</h2>
+  </div>
+  </div>
+</div>
   
 <!-- component -->
 <!-- Created By Joker Banny -->
 <div class="flex py-10 items-center justify-center bg-white dark:bg-black px-6 md:px-60">
-  <div class="space-y-6 border-l-2 border-dashed">
+  <div class="space-y-6 border-l-2 border-dashed dark:border-gray-900">
     <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
       </svg>
       <div class="ml-6">
-        <h4 class="font-bold text-purple-500">Frontend Development.</h4>
+        <h4 class="font-bold text-purple-500 dark:text-purple-600">Frontend Development.</h4>
         <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500">2007</span>
+        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
       </div>
     </div>
     <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
       </svg>
       <div class="ml-6">
-        <h4 class="font-bold text-purple-500">Graphic Design.</h4>
+        <h4 class="font-bold text-purple-500 dark:text-purple-600">Graphic Design.</h4>
         <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500">2007</span>
+        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
       </div>
     </div>
     <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
       </svg>
       <div class="ml-6">
-        <h4 class="font-bold text-purple-500">Lead Ui/Ux Designer.</h4>
+        <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
         <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500">2007</span>
+        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
       </div>
     </div>
     <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
       </svg>
       <div class="ml-6">
-        <h4 class="font-bold text-purple-500">Lead Ui/Ux Designer.</h4>
+        <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
         <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500">2007</span>
+        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
       </div>
     </div>
   </div>
-
-  # create a div 
-
-  
 </div>
+
+<footer class="w-full bg-black text-gray-400 text-center p-5 text-sm"><p>This website was build by <b>Thiago Augusto</b>, from the prototype to the final front web using tailwindcss.</p></footer>
 </body>
 </html>
