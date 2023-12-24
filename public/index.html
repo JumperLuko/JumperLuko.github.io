@@ -56,7 +56,7 @@
       <div id="slideshow" class="flex w-full">
         <!-- Slide 1 -->
         <div id="slide-1" class="grid grid-cols-1 lg:grid-cols-8 items-stretch duration-700 ease-in-out bg-gray-200 dark:bg-gray-800 darl:text-gray-200 w-full h-full">
-            <div class="flex lg:col-span-3 items-center justify-center"><img src="./profile-pic.webp" class="w-[200px]" alt="Profile Picture" /></div>
+            <div class="flex lg:col-span-3 items-center justify-center"><img src="./img/profile-pic.webp" class="w-[200px]" alt="Profile Picture" /></div>
             <div class="lg:col-span-5 bg-gray-300 dark:bg-gray-700 dark:text-gray-300 p-10">
               <h2 class="rounded-3xl bg-gray-200 dark:bg-gray-800 dark:text-gray-200 text-xl w-max px-7 py-4">Thiago Augusto</h2>
               <div class="block my-10 mx-5">
@@ -95,7 +95,7 @@
 
 <div class="grid gap-4 lg:grid-cols-6">
   <div></div>
-  <div class="flex py-10 items-center">
+  <a href="#cases" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
       <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
@@ -106,8 +106,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="flex py-10 items-center">
+  </a>
+  <a href="#tools" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
       <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
@@ -118,7 +118,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </a>
   <div class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
@@ -143,10 +143,16 @@
       </div>
     </div>
   </div>
-  
 </div>
 
-<div class="w-full">
+<a href="." class="topButtonLink">
+  <div class="topButton sticky right-1 h-[60px] w-[50px] flex items-center justify-start flex-col bg-gray-100 text-gray-800 rounded-t-full  backdrop-blur-md bg-opacity-50 hover:bg-opacity-80 text-opacity-50 hover:text-opacity-100 py-1 transition-all duration-300 ease-in-out">
+    <svg class="w-[30px] h-[30px]" fill="currentColor" enable-background="new 0 0 256 256" version="1.1" viewBox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m12.3 187.7 101.1-131.6c7-9.2 22.3-9.2 29.3 0l101.1 131.6c6.5 8.5-1.6 19.1-14.7 19.1h-202.2c-13 0-21.1-10.6-14.6-19.1z"/></svg>
+    <div>UP</div>
+  </div>
+</a>
+
+<div class="w-full" id="cases">
   <div class="grid grid-cols-1 lg:grid-cols-3">
     <div class="flex justify-center items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-200"><img src="" alt="*Star image*"></div>
     <div class="col-span-2 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 py-10 px-8">
