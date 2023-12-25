@@ -18,6 +18,10 @@
 </button>
 <script src="./js/darkmode.js"></script>
 
+
+<!-- I want some flutuant element whe hover, something dancing arrond smooth -->
+
+
 <!--
   Heads up! 👋
 
@@ -37,7 +41,7 @@
     </a>
   </div>
   <div class="lg:col-span-6">
-    <header class="rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 bg-gray-400">
+    <header class="rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 bg-white-400 dark:bg-black">
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <div class="text-center sm:text-left">
@@ -52,12 +56,12 @@
         </div>
       </div>
     </header>
-    <div class="rounded-3xl bg-gray-300 dark:bg-gray-900 h-[580px] py-10 flex">
+    <div class="rounded-3xl bg-gray-300 dark:bg-gray-900 dark:text-gray-200 h-[580px] py-10 flex">
       <div id="slideshow" class="flex w-full">
         <!-- Slide 1 -->
-        <div id="slide-1" class="grid grid-cols-1 lg:grid-cols-8 items-stretch duration-700 ease-in-out bg-gray-200 dark:bg-gray-800 darl:text-gray-200 w-full h-full">
+        <div id="slide-1" class="grid grid-cols-1 lg:grid-cols-8 items-stretch duration-700 ease-in-out  darl:text-gray-200 w-full h-full">
             <div class="flex lg:col-span-3 items-center justify-center"><img src="./img/profile-pic.webp" class="w-[200px]" alt="Profile Picture" /></div>
-            <div class="lg:col-span-5 bg-gray-300 dark:bg-gray-700 dark:text-gray-300 p-10">
+            <div class="lg:col-span-5 dark:text-gray-300 p-10">
               <h2 class="rounded-3xl bg-gray-200 dark:bg-gray-800 dark:text-gray-200 text-xl w-max px-7 py-4">Thiago Augusto</h2>
               <div class="block my-10 mx-5">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Velit laoreet id donec ultrices. </p>
@@ -98,11 +102,9 @@
   <a href="#cases" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
-      <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
+      <div class="relative flex justify-center items-end rounded-[15px] bg-white dark:bg-gray-900 p-6 h-52 bg-no-repeat bg-top" style="background-image: url(./img/star-bigger.svg);">
         <div class="space-y-4">
-          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
-          <p class="font-md text-slate-500">Some Image HERE <br/><br/> ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore .</p>
-          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">Cases</p>
+          <p class="text-xl text-center font-semibold text-slate-800 dark:text-slate-200">Cases</p>
         </div>
       </div>
     </div>
@@ -110,58 +112,56 @@
   <a href="#tools" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
-      <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
+      <div class="relative flex justify-center items-end rounded-[15px] bg-white dark:bg-gray-900 p-6 h-52 bg-no-repeat bg-top" style="background-image: url(./img/star-bigger-.svg);">
         <div class="space-y-4">
-          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
-          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">Tools i use</p>
+          <p class="text-xl text-center font-semibold text-slate-800 dark:text-slate-200">Tools i use</p>
         </div>
       </div>
     </div>
   </a>
-  <div class="flex py-10 items-center">
+  <a href="#services" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
-      <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
+      <div class="relative flex justify-center items-end rounded-[15px] bg-white dark:bg-gray-900 p-6 h-52 bg-no-repeat bg-top" style="background-image: url(./img/star-bigger-.svg);">
         <div class="space-y-4">
-          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
-          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">My services</p>
+          <p class="text-xl text-center font-semibold text-slate-800 dark:text-slate-200">My services</p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="flex py-10 items-center">
+  </a>
+  <a href="#about" class="flex py-10 items-center">
     <div class="group relative mx-auto w-96 overflow-hidden rounded-[16px] bg-gray-300 dark:bg-gray-900 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
       <div class="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
-      <div class="relative rounded-[15px] bg-white dark:bg-gray-900 p-6">
+      <div class="relative flex justify-center items-end rounded-[15px] bg-white dark:bg-gray-900 p-6 h-52 bg-no-repeat bg-top" style="background-image: url(./img/star-bigger-.svg);">
         <div class="space-y-4">
-          <img src="https://nuxt.com/assets/home/ux-fast-light.svg" alt="" />
-          <p class="font-md text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus temporibus est ut nisi nam at adipisci sunt dolore quibusdam.</p>
-          <p class="text-lg text-center font-semibold text-slate-800 dark:text-slate-200">About me</p>
+          <p class="text-xl text-center font-semibold text-slate-800 dark:text-slate-200">About me</p>
         </div>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 
+
 <a href="." class="topButtonLink">
-  <div class="topButton sticky right-1 h-[60px] w-[50px] flex items-center justify-start flex-col bg-gray-100 text-gray-800 rounded-t-full  backdrop-blur-md bg-opacity-50 hover:bg-opacity-80 text-opacity-50 hover:text-opacity-100 py-1 transition-all duration-300 ease-in-out">
+  <div class="topButton sticky right-1 h-[60px] w-[50px] flex items-center justify-start flex-col bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 rounded-t-full  backdrop-blur-md bg-opacity-50 hover:bg-opacity-80 text-opacity-50 hover:text-opacity-100 py-1 transition-all duration-300 ease-in-out">
     <svg class="w-[30px] h-[30px]" fill="currentColor" enable-background="new 0 0 256 256" version="1.1" viewBox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m12.3 187.7 101.1-131.6c7-9.2 22.3-9.2 29.3 0l101.1 131.6c6.5 8.5-1.6 19.1-14.7 19.1h-202.2c-13 0-21.1-10.6-14.6-19.1z"/></svg>
     <div>UP</div>
   </div>
 </a>
 
+
 <div class="w-full" id="cases">
   <div class="grid grid-cols-1 lg:grid-cols-3">
-    <div class="flex justify-center items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-200"><img src="" alt="*Star image*"></div>
-    <div class="col-span-2 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 py-10 px-8">
+    <div class="flex justify-center items-center dark:text-gray-200">
+      <img src="./img/star-bigger.svg" alt="" />
+    </div>
+    <div class="col-span-2 dark:text-gray-100 py-10 px-8">
       <h1 class="text-5xl p-5">Cases</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis auctor elit sed vulputate mi sit amet. Elementum sagittis vitae et leo duis ut diam quam. Ligula ullamcorper malesuada proin libero. Elit sed vulputate mi sit amet mauris commodo quis. Pulvinar etiam non quam lacus. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Purus gravida quis blandit turpis cursus in hac habitasse. Dui accumsan sit amet nulla. Urna porttitor rhoncus dolor purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lobortis elementum nibh tellus molestie nunc non. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Ut morbi tincidunt augue interdum velit euismod in.</p>
       <p>Eu turpis egestas pretium aenean pharetra magna. Interdum velit laoreet id donec. Vitae ultricies leo integer malesuada nunc vel risus. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Pretium aenean pharetra magna ac. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Dolor morbi non arcu risus quis. Sit amet justo donec enim diam vulputate ut pharetra. Netus et malesuada fames ac turpis egestas maecenas. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Eleifend quam adipiscing vitae proin. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Massa sapien faucibus et molestie ac feugiat sed lectus. Mauris nunc congue nisi vitae suscipit.</p>
     </div>
   </div>
-  <div class="w-full bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+  <div class="w-full dark:text-gray-100">
     <div>
       <h2 class="text-3xl">Case 1</h2>
     </div>
@@ -174,58 +174,104 @@
   </div>
 </div>
 
-<div class="mt-[50px] bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+<div class="grid grid-cols-3 grid-rows-3 mt-[50px] bg-gray-100 dark:bg-gray-900 dark:text-gray-100" id="tools">
+  <div class="row-span-2 flex justify-center items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-200"><img src="" alt="*Tools image*"></div>
   <h1 class="text-5xl p-5">Tools</h1>
-  <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
-  <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  <div>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  </div>
+  <div>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  </div>
+  <div>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  </div>
+  <div>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  </div>
+  <div>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+    <span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 dark:bg-purple-700 dark:text-purple-100">Live</span>
+  </div>
 </div>
 
-<!-- component -->
-<!-- Created By Joker Banny -->
-<div class="flex py-10 items-center justify-center bg-white dark:bg-black px-6 md:px-60">
-  <div class="space-y-6 border-l-2 border-dashed dark:border-gray-900">
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-purple-500 dark:text-purple-600">Frontend Development.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
-      </div>
-    </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-purple-500 dark:text-purple-600">Graphic Design.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
-      </div>
-    </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
-      </div>
-    </div>
-    <div class="relative w-full">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
-        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-      </svg>
-      <div class="ml-6">
-        <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-        <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
+<div class="grid grid-cols-3 grid-rows-3 mt-[50px] bg-gray-100 dark:bg-gray-900 dark:text-gray-100" id="services">
+  <div class="row-span-2 flex justify-center items-center bg-gray-200 dark:bg-gray-800 dark:text-gray-200"><img src="" alt="*image*"></div>
+  <h1 class="text-5xl p-5">Services</h1>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="grid grid-cols-3 grid-rows-3 mt-[50px] bg-gray-100 dark:bg-gray-900 dark:text-gray-100" id="about">
+  <div class="row-span-1 flex justify-center items-center dark:text-gray-200">
+    <div class="flex lg:col-span-3 items-center justify-center"><img src="./img/profile-pic.webp" class="w-[200px]" alt="Profile Picture" /></div>
+  </div>
+  <h1 class="text-5xl p-5">About</h1>
+  <div></div>
+  <div class="row-span-3 col-span-3 flex justify-center">
+    <!-- component -->
+    <!-- Created By Joker Banny -->
+    <div class="flex py-10 items-center justify-center bg-white dark:bg-black px-6 md:px-60">
+      <div class="space-y-6 border-l-2 border-dashed dark:border-gray-900">
+        <div class="relative w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-6">
+            <h4 class="font-bold text-purple-500 dark:text-purple-600">Frontend Development.</h4>
+            <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
+            <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-6">
+            <h4 class="font-bold text-purple-500 dark:text-purple-600">Graphic Design.</h4>
+            <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
+            <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-6">
+            <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
+            <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
+            <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-purple-500 dark:text-purple-600">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-6">
+            <h4 class="font-bold text-purple-500 dark:text-purple-600">Lead Ui/Ux Designer.</h4>
+            <p class="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
+            <span class="mt-1 block text-sm font-semibold text-purple-500 dark:text-purple-600">2007</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
+
+
+
+
 
 <footer class="w-full bg-black text-gray-400 text-center p-5 text-sm"><p>This website was build by <b>Thiago Augusto</b>, from the prototype to the final front web using tailwindcss.</p></footer>
 </body>
