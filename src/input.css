@@ -45,3 +45,7 @@
 .toolsBlock{
     grid-template-rows: auto 1fr 1fr;
 }
+
+.servicesBlock{
+    grid-template-rows: auto 1fr;
+}
